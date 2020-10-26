@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+git format-patch $(git merge-base --fork-point master)..$(git rev-parse --abbrev-ref HEAD) --stdout >~/Downloads/$(git rev-parse --abbrev-ref HEAD).patch

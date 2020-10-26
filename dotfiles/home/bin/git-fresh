@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+default_branch="$(git remote show origin|awk '$1 == "HEAD" && $2 == "branch:" {print $3}')"
+git pull origin "${default_branch}"
+git branch --merged | grep -v -e '^*' -e "${default_branch}" | xargs -L1 git branch -d
+git fetch --all --prune
+git clean -fd

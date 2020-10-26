@@ -1,0 +1,2 @@
+#!/bin/bash
+git log --graph --decorate --pretty --format="%h %G? %ce %aI %d %f"

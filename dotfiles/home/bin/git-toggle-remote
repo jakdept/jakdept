@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+remote=origin
+before=$(git remote get-url ${remote})
+after=""
+
+if [[ -n ${1} ]]; then
+    remote=${1}
+fi
+
+if [[ ${before} == http* ]]; then
+  after=$(echo ${before} | perl -pe 's/https?\:\/\/(.*?)\/(.*)/git\@$1:$2/g')
+elif [[ ${before} == git\@* ]]; then
+  after=$(echo ${before} | perl -pe 's/git\@(.*?)\:(.*)/https:\/\/$1\/$2/g')
+else
+  echo "URL Scheme unknown\n"
+  exit 1
+fi
+
+git remote set-url ${remote} ${after}

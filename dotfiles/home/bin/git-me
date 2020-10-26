@@ -1,0 +1,30 @@
+#!/usr/bin/env sh
+
+# clones a specific clone url to your git source path located at ~/src
+# location is determined by url - domain then folders
+# location matches the golang go get behavior, if GOPATH is ${HOME}
+
+[[ -z $1 ]] && echo "you must specifiy a clone path to clone" && exit 2
+clonePath=$1
+
+dirPath="${HOME}/src/"
+
+if [[ ${clonePath} =~ https://.+ ]]; then
+  # https://git.liquidweb.com/actionnewsteam/dotfiles.git
+  dirPath=${dirPath}$(echo "${clonePath}" | sed -e 's/^https:\/\///')
+elif [[ ${clonePath} =~ http://.+ ]]; then
+  # https://git.liquidweb.com/actionnewsteam/dotfiles.git
+  dirPath=${dirPath}$(echo "${clonePath}" | sed -e 's/^http:\/\///')
+elif [[ ${clonePath} =~ git@.+:.+ ]]; then
+  # git@git.liquidweb.com:actionnewsteam/dotfiles.git
+  dirPath=${dirPath}$(echo "${clonePath}" | sed -e 's/^git@//' -e 's/:/\//')
+else
+  echo "clone pattern not supported" && exit 2
+fi
+
+if [[ ${dirPath} =~ \.git$ ]]; then
+  dirPath=$(echo "${dirPath}" | sed -e 's/\.git//')
+fi
+
+mkdir -p $(dirname  ${dirPath})
+git clone ${clonePath} ${dirPath}
