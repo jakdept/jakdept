@@ -1,16 +1,13 @@
-### Hi there 👋
+## Hi there 👋 I'm Jack Hayhurst!
 
-<!--
-**jakdept/jakdept** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+💻 Serious code:
 
-Here are some ideas to get you started:
+* [jakdept/caScan](https://github.com/jakdept/caScan) - TLS certificate chain fingerprinting
+* [jakdept/apicat](https://github.com/jakdept/apicat) - Client for paginated calls against JSON API
+* [jakdept/procinfo](https://github.com/jakdept/procinfo) - Process information library for Golang
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🎉 Fun code:
+
+* [jakdept/clapback](https://github.com/jakdept/clapback) - 👏 sometimes 👏 you 👏 need 👏 to 👏 make 👏 a 👏 point 👏
+* https://github.com/jakdept/spongebob - sOmEtImEs tHe pOiNt mAkEs iTsElF
+* https://github.com/jakdept/sp9k1 - sometimes you just gotta 💩📮
