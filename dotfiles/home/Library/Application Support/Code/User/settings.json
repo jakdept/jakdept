@@ -1,0 +1,185 @@
+// Place your settings in this file to overwrite the default settings
+{
+	// editor view preferences
+	"workbench.colorTheme": "WarpOS", // theme
+	"editor.fontSize": 11,
+	"editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
+	"terminal.integrated.fontFamily": "Hack, Menlo, Monaco, Consolas, \"Droid Sans Mono\", \"Courier New\", monospace, \"Droid Sans Fallback\"",
+	"window.zoomLevel": 0,
+	"editor.renderWhitespace": "boundary", // draw some whitespace
+	"window.titleBarStyle": "custom",
+	"window.menuBarVisibility": "toggle", // hide menu bar - linux only
+	"editor.minimap.enabled": false, // minimap on right - nice but not very useful
+	"editor.fontLigatures": true,
+	"editor.tabSize": 2, // each tab is 2 spaces
+	//
+	// editor behavior
+	"editor.formatOnSave": false, // format on every save
+	"workbench.activityBar.visible": true, // show the bar on the left
+	"search.useIgnoreFiles": false, // make search faster
+	"files.autoSave": "onFocusChange", // autosave when switching apps
+	"editor.parameterHints.enabled": false, // get rid of popups when editing
+	"workbench.settings.editor": "json", // use json editor instead of gui
+	"workbench.statusBar.visible": true, // bottom blue bar
+	"window.restoreWindows": "none", // onstartup do not restore windows
+	"workbench.editor.showTabs": true, // show tabs
+	"workbench.editor.labelFormat": "medium", // medium file paths
+	"explorer.confirmDragAndDrop": false, // do not prompt on drag and drop
+	"workbench.panel.defaultLocation": "right", // put cli panel on the right
+	"search.quickOpen.includeHistory": false, // do not show recently opened files
+	//
+	// word wrap settings
+	"editor.wordWrap": "bounded", // wrap at either tab  or below
+	"editor.wordWrapColumn": 160, // wrap at 160 chars
+	"editor.wrappingIndent": "indent", // indent once when wrapping
+	"editor.rulers": [
+		80 // draw a line at 80 characters
+	],
+	//
+	// disable some preview behavior
+	"workbench.editor.enablePreview": false, // disable annoying half-open
+	"workbench.editor.enablePreviewFromQuickOpen": false, // disable half-open
+	"markdown.preview.doubleClickToSwitchToEditor": false,
+	//
+	// git settings
+	"git.autofetch": false,
+	"gitlab.instanceUrl": "https://git.liquidweb.com",
+	"gitlab.enableExperimentalFeatures": true,
+	"gitlab.showPipelineUpdateNotifications": false,
+	"git.enableSmartCommit": true,
+	"git.enableCommitSigning": false, // only works if you have a GPG key set up
+	"gitlens.keymap": "none", // disable gitlense keybinding
+	"gitlens.codeLens.enabled": false, // disable some git comments (slow)
+	// side by side diff splits 1 normal sized pane in half which is too small
+	"diffEditor.renderSideBySide": false, // do inline diff
+	//
+	//
+	// some editor defaults
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[dockerfile]": {
+		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
+	},
+	"files.associations": {
+		"*.yaml": "yaml",
+		"*.plist": "xml",
+		"*.spec": "RPMSpec"
+	},
+	//
+	// vim settings
+	"vim.foldfix": true, // move properly through folds
+	"vim.handleKeys": {
+		"<C-d>": false,
+		"<C-s>": false,
+		"<C-f>": false,
+		"<C-b>": false,
+		"<C-n>": false,
+		"<C-w>": false,
+		"<W-v>": false,
+		"<C-S-e>": false,
+		"<C-S-g>": false,
+		"<C-E>": false
+	},
+	"go.formatTool": "goreturns",
+	"go.buildOnSave": "package",
+	// Run Lint tool on save.
+	"go.lintOnSave": "package",
+	// Specifies Lint tool name.
+	"go.lintTool": "golangci-lint",
+	// https://github.com/alecthomas/gometalinter#supported-linters
+	"go.lintFlags": [
+		"--disable-all",
+		"--enable=deadcode",
+		"--enable=errcheck",
+		"--enable=gosimple",
+		"--enable=govet",
+		"--enable=golint",
+		"--enable=ineffassign",
+		"--enable=staticcheck",
+		"--enable=structcheck",
+		"--enable=typecheck",
+		"--enable=unused",
+		"--enable=varcheck",
+		"--enable=interfacer",
+		"--enable=gosec",
+		"--enable=dupl",
+		"--enable=goconst",
+		"--enable=goimports",
+		"--enable=misspell",
+		"--enable=unparam",
+	],
+	"go.vetOnSave": "package",
+	"go.coverOnSave": true,
+	"go.toolsEnvVars": {
+		"CGO_ENABLED": 1
+	},
+	"go.useLanguageServer": true,
+	"python.pythonPath": "python3",
+	"material-icon-theme.showUpdateMessage": false,
+	"extensions.ignoreRecommendations": false,
+	"window.newWindowDimensions": "inherit",
+	"zenMode.hideActivityBar": false,
+	"zenMode.hideLineNumbers": false,
+	"zenMode.hideStatusBar": false,
+	"zenMode.hideTabs": false,
+	"terminal.integrated.rendererType": "dom",
+	"liveshare.featureSet": "insiders",
+	"problems.showCurrentInStatus": true,
+	"workbench.startupEditor": "newUntitledFile",
+	"editor.renameOnType": false,
+	"git.autoStash": true,
+	"git.inputValidationLength": 80,
+	"git.inputValidationSubjectLength": 80,
+	"gitlens.currentLine.enabled": false,
+	"shellformat.flag": "-ln bash",
+	"yaml.schemas": {
+		"file:///Users/jhayhurst/.vscode/extensions/atlassian.atlascode-2.8.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+	},
+	"atlascode.jira.jqlList": [
+		{
+			"enabled": true,
+			"id": "eadee164-98e4-4b42-9c00-050d2690de2f",
+			"monitor": true,
+			"name": "My liquidweb Issues",
+			"query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+			"siteId": "f887abaf-ee6c-4820-9ee8-06ccf8456c7a"
+		},
+		{
+			"enabled": true,
+			"id": "247f39f9-2bdc-448c-901a-3b74ee73ad77",
+			"monitor": true,
+			"name": "past due CC",
+			"query": "issuetype = Task AND project = CC AND status = Approved order by created DESC ",
+			"siteId": "f887abaf-ee6c-4820-9ee8-06ccf8456c7a"
+		},
+		{
+			"enabled": true,
+			"id": "9bf8aa9c-2e5b-46f0-bc2e-5c1391f947ac",
+			"monitor": true,
+			"name": "CC On Deck",
+			"query": "project = CC AND status = \"Waiting for Change Board\" order by created DESC ",
+			"siteId": "f887abaf-ee6c-4820-9ee8-06ccf8456c7a"
+		},
+		{
+			"enabled": true,
+			"id": "7ba799c9-6dba-4af3-a984-64f8d52a1b52",
+			"monitor": true,
+			"name": "My CC",
+			"query": "project = CC AND status NOT IN ('Change Implemented', 'Change Redacted', 'Denied') AND assignee in (currentUser()) order by created DESC",
+			"siteId": "f887abaf-ee6c-4820-9ee8-06ccf8456c7a"
+		}
+	],
+	"diffEditor.ignoreTrimWhitespace": false,
+	"atlascode.jira.statusbar.enabled": true,
+	"atlascode.jira.statusbar.showProduct": true,
+	"atlascode.bitbucket.enabled": false,
+	"git.confirmSync": false,
+	"workbench.sideBar.location": "right",
+	"keyboard.touchbar.enabled": false,
+	"go.coverMode": "atomic",
+	"atlascode.jira.todoIssues.triggers": [
+		"BUG:",
+		"FIXME:"
+	],
+}

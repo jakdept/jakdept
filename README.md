@@ -9,5 +9,5 @@
 🎉 Fun code:
 
 * [jakdept/clapback](https://github.com/jakdept/clapback) - 👏 sometimes 👏 you 👏 need 👏 to 👏 make 👏 a 👏 point 👏
-* https://github.com/jakdept/spongebob - sOmEtImEs tHe pOiNt mAkEs iTsElF
-* https://github.com/jakdept/sp9k1 - sometimes you just gotta 💩📮
+* [jakdept/spongebob](https://github.com/jakdept/spongebob) - sOmEtImEs tHe pOiNt mAkEs iTsElF
+* [jakdept/sp9k1](https://github.com/jakdept/sp9k1) - sometimes you just gotta 💩📮
