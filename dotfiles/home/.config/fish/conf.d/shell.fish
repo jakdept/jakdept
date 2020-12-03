@@ -7,6 +7,5 @@ contains $CDPATH . ; or set -Ua CDPATH .
 contains $CDPATH ~/src; or set -Ua CDPATH ~/src
 contains $CDPATH ~ ; or set -Ua CDPATH ~
 
-alias ls="logo-ls"
 #alias openssl="docker run -t --rm rnix/openssl-gost /usr/bin/openssl"
 

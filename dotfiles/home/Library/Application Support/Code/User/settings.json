@@ -134,7 +134,7 @@
 	"gitlens.currentLine.enabled": false,
 	"shellformat.flag": "-ln bash",
 	"yaml.schemas": {
-		"file:///Users/jhayhurst/.vscode/extensions/atlassian.atlascode-2.8.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+		"file:///Users/jhayhurst/.vscode/extensions/atlassian.atlascode-2.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
 	},
 	"atlascode.jira.jqlList": [
 		{
@@ -175,11 +175,12 @@
 	"atlascode.jira.statusbar.showProduct": true,
 	"atlascode.bitbucket.enabled": false,
 	"git.confirmSync": false,
-	"workbench.sideBar.location": "right",
 	"keyboard.touchbar.enabled": false,
 	"go.coverMode": "atomic",
 	"atlascode.jira.todoIssues.triggers": [
 		"BUG:",
 		"FIXME:"
 	],
+	"editor.suggest.showReferences": false,
+	"references.preferredLocation": "view",
 }
