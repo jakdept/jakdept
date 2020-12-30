@@ -148,7 +148,7 @@
 		{
 			"enabled": true,
 			"id": "247f39f9-2bdc-448c-901a-3b74ee73ad77",
-			"monitor": true,
+			"monitor": false,
 			"name": "past due CC",
 			"query": "issuetype = Task AND project = CC AND status = Approved order by created DESC ",
 			"siteId": "f887abaf-ee6c-4820-9ee8-06ccf8456c7a"
@@ -156,7 +156,7 @@
 		{
 			"enabled": true,
 			"id": "9bf8aa9c-2e5b-46f0-bc2e-5c1391f947ac",
-			"monitor": true,
+			"monitor": false,
 			"name": "CC On Deck",
 			"query": "project = CC AND status = \"Waiting for Change Board\" order by created DESC ",
 			"siteId": "f887abaf-ee6c-4820-9ee8-06ccf8456c7a"

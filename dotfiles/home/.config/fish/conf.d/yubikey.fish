@@ -13,6 +13,20 @@ function yk-reset
 		xargs -I{} git config --global user.email "{}"
 end
 
+function yk-current
+  gpg --card-status | awk '{
+		if ( $0 ~ /^Name of cardholder ?\.*:/ ) {
+			$1=$2=$3="";
+			email=$0;
+		} else if ( $0 ~ /^Login data \.*:/ ) {
+			$1=$2=$3="";
+			name=$0; 
+		} else if ($1 == "sec#" ) {
+			print $2, "created:", $4, name, email;
+		};
+	}'
+end
+
 function yk-keys
   gpg --list-secret-keys | awk '{
 		if ($1 == "sec#" ) {
