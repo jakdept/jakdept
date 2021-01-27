@@ -183,4 +183,5 @@
 	],
 	"editor.suggest.showReferences": false,
 	"references.preferredLocation": "view",
+	"python.showStartPage": false,
 }
