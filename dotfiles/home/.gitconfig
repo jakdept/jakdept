@@ -1,0 +1,33 @@
+[url "ssh://git@git.liquidweb.com/"]
+	insteadOf = https://git.liquidweb.com/
+[user]
+	email = jhayhurst@liquidweb.com
+	name = Jack Hayhurst
+[push]
+	default = current
+[pull]
+	default = current
+	rebase = false
+[alias]
+	count   = !git shortlog -sn
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[core]
+	editor = vim
+	excludesfile = /Users/jhayhurst/.gitignore_global
+
+[init]
+	defaultBranch = main
