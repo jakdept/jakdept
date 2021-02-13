@@ -2,10 +2,9 @@
 {
 	// editor view preferences
 	"workbench.colorTheme": "WarpOS", // theme
-	"editor.fontSize": 11,
+	"editor.fontSize": 14,
 	"editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
 	"terminal.integrated.fontFamily": "Hack, Menlo, Monaco, Consolas, \"Droid Sans Mono\", \"Courier New\", monospace, \"Droid Sans Fallback\"",
-	"window.zoomLevel": 0,
 	"editor.renderWhitespace": "boundary", // draw some whitespace
 	"window.titleBarStyle": "custom",
 	"window.menuBarVisibility": "toggle", // hide menu bar - linux only
@@ -29,7 +28,7 @@
 	"search.quickOpen.includeHistory": false, // do not show recently opened files
 	//
 	// word wrap settings
-	"editor.wordWrap": "bounded", // wrap at either tab  or below
+	"editor.wordWrap": "on", // wrap at either tab  or below
 	"editor.wordWrapColumn": 160, // wrap at 160 chars
 	"editor.wrappingIndent": "indent", // indent once when wrapping
 	"editor.rulers": [
@@ -184,4 +183,5 @@
 	"editor.suggest.showReferences": false,
 	"references.preferredLocation": "view",
 	"python.showStartPage": false,
+	"atlascode.jira.explorer.monitorEnabled": true,
 }
