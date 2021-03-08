@@ -110,7 +110,7 @@
 		"--enable=unparam",
 		"--enable=gocritic",
 		"--enable=noctx",
-		"--enable=paralleltest",
+		// "--enable=paralleltest",
 		"--enable=unconvert",
 		"--enable=sqlclosecheck",
 		"--enable=gomnd",
@@ -193,7 +193,6 @@
 	"atlascode.jira.explorer.monitorEnabled": true,
 	"gitlens.hovers.enabled": false,
 	"gitlens.statusBar.enabled": false,
-	"editor.autoClosingQuotes": "never",
 	"gitlens.currentLine.pullRequests.enabled": false,
 	"gitlens.hovers.pullRequests.enabled": false,
 	"gitlens.statusBar.pullRequests.enabled": false,
@@ -213,5 +212,7 @@
 	"gitlens.views.repositories.pullRequests.showForBranches": false,
 	"gitlens.views.searchAndCompare.pullRequests.enabled": false,
 	"gitlens.views.searchAndCompare.pullRequests.showForCommits": false,
-	"gitlens.hovers.autolinks.enhanced": false
+	"gitlens.hovers.autolinks.enhanced": false,
+	"todohighlight.isEnable": true,
+	"todo-tree.tree.showScanModeButton": false
 }
