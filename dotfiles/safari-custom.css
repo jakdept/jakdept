@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@media (min-width: 480px) {
+  div#top.style-scope.ytd-watch>div#player.style-scope.ytd-watch {
+    max-height: calc(100vh);
+  }
+
+  div#content>ytd-page-manager#page-manager.style-scope.ytd-app {
+    margin-top: 0px;
+  }
+
+  body:not(.style-scope)[themed-scrollbar]:not(.style-scope):not([no-y-overflow]):not(.style-scope) {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}

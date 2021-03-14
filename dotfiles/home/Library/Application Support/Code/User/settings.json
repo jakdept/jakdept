@@ -5,8 +5,7 @@
 	"editor.fontSize": 12,
 	"editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
 	"terminal.integrated.fontFamily": "Hack, Menlo, Monaco, Consolas, \"Droid Sans Mono\", \"Courier New\", monospace, \"Droid Sans Fallback\"",
-	"editor.renderWhitespace": "boundary", // draw some whitespace
-	"window.titleBarStyle": "custom",
+	"editor.renderWhitespace": "boundary",
 	"window.menuBarVisibility": "toggle", // hide menu bar - linux only
 	"editor.minimap.enabled": false, // minimap on right - nice but not very useful
 	"editor.fontLigatures": true,
@@ -17,8 +16,7 @@
 	"workbench.activityBar.visible": true, // show the bar on the left
 	"search.useIgnoreFiles": false, // make search faster
 	"files.autoSave": "onFocusChange", // autosave when switching apps
-	"editor.parameterHints.enabled": false, // get rid of popups when editing
-	"workbench.settings.editor": "json", // use json editor instead of gui
+	"editor.parameterHints.enabled": false, // use json editor instead of gui
 	"workbench.statusBar.visible": true, // bottom blue bar
 	"window.restoreWindows": "none", // onstartup do not restore windows
 	"workbench.editor.showTabs": true, // show tabs
@@ -47,8 +45,7 @@
 	"gitlab.showPipelineUpdateNotifications": false,
 	"git.enableSmartCommit": true,
 	"git.enableCommitSigning": false, // only works if you have a GPG key set up
-	"gitlens.keymap": "none", // disable gitlense keybinding
-	"gitlens.codeLens.enabled": false, // disable some git comments (slow)
+	"gitlens.keymap": "none", // disable some git comments (slow)
 	// side by side diff splits 1 normal sized pane in half which is too small
 	"diffEditor.renderSideBySide": false, // do inline diff
 	//
@@ -137,11 +134,7 @@
 	"git.autoStash": true,
 	"git.inputValidationLength": 80,
 	"git.inputValidationSubjectLength": 80,
-	"gitlens.currentLine.enabled": false,
 	"shellformat.flag": "-ln bash",
-	"yaml.schemas": {
-		"file:///Users/jhayhurst/.vscode/extensions/atlassian.atlascode-2.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-	},
 	"atlascode.jira.jqlList": [
 		{
 			"enabled": true,
@@ -191,11 +184,8 @@
 	"references.preferredLocation": "view",
 	"python.showStartPage": false,
 	"atlascode.jira.explorer.monitorEnabled": true,
-	"gitlens.hovers.enabled": false,
-	"gitlens.statusBar.enabled": false,
 	"gitlens.currentLine.pullRequests.enabled": false,
 	"gitlens.hovers.pullRequests.enabled": false,
-	"gitlens.statusBar.pullRequests.enabled": false,
 	"gitlens.views.branches.pullRequests.enabled": false,
 	"gitlens.views.branches.pullRequests.showForBranches": false,
 	"gitlens.views.branches.pullRequests.showForCommits": false,
@@ -214,5 +204,14 @@
 	"gitlens.views.searchAndCompare.pullRequests.showForCommits": false,
 	"gitlens.hovers.autolinks.enhanced": false,
 	"todohighlight.isEnable": true,
-	"todo-tree.tree.showScanModeButton": false
+	"todo-tree.tree.showScanModeButton": false,
+	"gitlens.hovers.currentLine.over": "line",
+	"gitlens.codeLens.enabled": false,
+	"gitlens.statusBar.pullRequests.enabled": false,
+	"gitlens.hovers.avatars": false,
+	"gitlens.hovers.enabled": false,
+	"gitlens.views.fileHistory.avatars": false,
+	"yaml.schemas": {
+		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-2.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+	},
 }
