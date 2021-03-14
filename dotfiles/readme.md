@@ -22,15 +22,38 @@ git clone git@github.com:jakdept/jakdept.git ~/src/github.com/jakdept/jakdept
 
 Install everything else from brew, and setup VSCode:
 ```bash
-mkdir -p ~/.config/fish/functions ~/bin
-ln ~/src/github.com/jakdept/jakdept/dotfiles/vscode/settings.json '~/Library/Application Support/Code/User/'
-ln -s ~/src/github.com/jakdept/jakdept/dotfiles/home/.config/fish/conf.d ~/.config/fish/conf.d
+mkdir -p ~/.config/fish/functions ~/.config/fish/conf.d ~/bin ~/.ssh ~/Library ~/Library/Application\ Support/Code/User/
 ln ~/src/github.com/jakdept/jakdept/dotfiles/home/.config/fish/functions/fish_prompt.fish ~/.config/fish/functions/
+ls ~/src/github.com/jakdept/jakdept/dotfiles/home/.config/fish/conf.d | xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/.config/fish/conf.d/{} ~/.config/fish/conf.d/
 
-ls dotfiles/home/bin | xargs -I{} ln {} ~/bin/
+ls ~/src/github.com/jakdept/jakdept/dotfiles/home/Library/Application Support/Code/User/ | xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/Library/Application Support/Code/User/{} ~/Library/Application Support/Code/User/
 
-cat dotfiles/brew-install.list | xargs brew install
-cat dotfiles/vscode-install.list | xargs -L1 vscode --install-extension
+ls ~/src/github.com/jakdept/jakdept/dotfiles/home/bin | xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/bin/{} ~/bin/
+
+cat ~/src/github.com/jakdept/jakdept/dotfiles/brew-install.list | xargs brew install
+```
+
+Open vscode and run `Shell Command: Install 'code' command in PATH`
+
+```
+cat dotfiles/vscode-install.list | xargs -L1 code --install-extension
+```
+
+Sign into the app store, then:
+```
+awk '{print $1}' ~/src/github.com/jakdept/jakdept/dotfiles/mas-install.list | xargs -L1 mas install
+```
+
+Switch to fish:
+
+```bash
+echo /usr/local/bin/fish | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/fish
+```
+
+Install latest go:
+```bash
+update-go
 ```
 
 Some other things to install:
@@ -45,6 +68,10 @@ github.com/clarkwang/passh \
 github.com/mvdan/sh/cmd/shfmt \
 github.com/jessfraz/udict \
 github.com/jakdept/spongebob
+```
+
+```bash
+ls ~/src/github.com/jakdept/jakdept/dotfiles/home/.gnupg|xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/.gnupg/{} ~/.gnupg/
 ```
 
 Some git repos I'll want:
