@@ -10,6 +10,7 @@ Install Brew:
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" 
 ```
+
 Install git:
 ```
 brew install git
@@ -17,7 +18,7 @@ brew install git
 
 To clone:
 ```bash
-git clone git@github.com:jakdept/jakdept.git ~/src/github.com/jakdept/jakdept
+git clone https://github.com/jakdept/jakdept.git ~/src/github.com/jakdept/jakdept
 ```
 
 Install everything else from brew, and setup VSCode:
@@ -26,22 +27,9 @@ mkdir -p ~/.config/fish/functions ~/.config/fish/conf.d ~/bin ~/.ssh ~/Library ~
 ln ~/src/github.com/jakdept/jakdept/dotfiles/home/.config/fish/functions/fish_prompt.fish ~/.config/fish/functions/
 ls ~/src/github.com/jakdept/jakdept/dotfiles/home/.config/fish/conf.d | xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/.config/fish/conf.d/{} ~/.config/fish/conf.d/
 
-ls ~/src/github.com/jakdept/jakdept/dotfiles/home/Library/Application\ Support/Code/User/ | xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/Library/Application\ Support/Code/User/{} ~/Library/Application\ Support/Code/User/
-
 ls ~/src/github.com/jakdept/jakdept/dotfiles/home/bin | xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/bin/{} ~/bin/
 
 cat ~/src/github.com/jakdept/jakdept/dotfiles/brew-install.list | xargs brew install
-```
-
-Open vscode and run `Shell Command: Install 'code' command in PATH`
-
-```
-cat dotfiles/vscode-install.list | xargs -L1 code --install-extension
-```
-
-Sign into the app store, then:
-```
-awk '{print $1}' ~/src/github.com/jakdept/jakdept/dotfiles/mas-install.list | xargs -L1 mas install
 ```
 
 Switch to fish:
@@ -50,6 +38,30 @@ Switch to fish:
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/fish
 ```
+
+You should now have iterm. Open it, change the font to Hack, and then you can do multiple things below in different windows at the same time.
+
+### Setup VSCode
+
+Install config files:
+```bash
+ls ~/src/github.com/jakdept/jakdept/dotfiles/home/Library/Application\ Support/Code/User/ | xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/Library/Application\ Support/Code/User/{} ~/Library/Application\ Support/Code/User/
+```
+
+Open vscode and run `Shell Command: Install 'code' command in PATH`
+
+```
+cat dotfiles/vscode-install.list | xargs -L1 code --install-extension
+```
+
+### Add macOS App Store Packages
+
+Sign into the app store, then:
+```
+awk '{print $1}' ~/src/github.com/jakdept/jakdept/dotfiles/mas-install.list | xargs -L1 mas install
+```
+
+### Add go
 
 Install latest go:
 ```bash
@@ -70,11 +82,12 @@ github.com/jessfraz/udict \
 github.com/jakdept/spongebob
 ```
 
+### Setup SSH key / GPG
 ```bash
 ls ~/src/github.com/jakdept/jakdept/dotfiles/home/.gnupg|xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/.gnupg/{} ~/.gnupg/
 ```
 
-Some git repos I'll want:
+### More repos to clone
 
 ```
 https://github.com/apache/httpd.git
