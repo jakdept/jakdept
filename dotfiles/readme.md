@@ -21,14 +21,16 @@ To clone:
 git clone https://github.com/jakdept/jakdept.git ~/src/github.com/jakdept/jakdept
 ```
 
-Install everything else from brew, and setup VSCode:
+Install initial configs:
 ```bash
 mkdir -p ~/.config/fish/functions ~/.config/fish/conf.d ~/bin ~/.ssh ~/Library ~/Library/Application\ Support/Code/User/
 ln ~/src/github.com/jakdept/jakdept/dotfiles/home/.config/fish/functions/fish_prompt.fish ~/.config/fish/functions/
 ls ~/src/github.com/jakdept/jakdept/dotfiles/home/.config/fish/conf.d | xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/.config/fish/conf.d/{} ~/.config/fish/conf.d/
+```
 
-ls ~/src/github.com/jakdept/jakdept/dotfiles/home/bin | xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/bin/{} ~/bin/
+Install items from brew (will take a while):
 
+```bash
 cat ~/src/github.com/jakdept/jakdept/dotfiles/brew-install.list | xargs brew install
 ```
 
@@ -39,7 +41,10 @@ echo /usr/local/bin/fish | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/fish
 ```
 
-You should now have iterm. Open it, change the font to Hack, and then you can do multiple things below in different windows at the same time.
+You should now have iterm. Open it and:
+* Change the font to hack
+* Set the default directory to ~/Downloads/
+* Set window transparency
 
 ### Setup VSCode
 
@@ -85,6 +90,11 @@ github.com/jakdept/spongebob
 ### Setup SSH key / GPG
 ```bash
 ls ~/src/github.com/jakdept/jakdept/dotfiles/home/.gnupg|xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/.gnupg/{} ~/.gnupg/
+```
+
+### Add in binaries
+```bash
+ls ~/src/github.com/jakdept/jakdept/dotfiles/home/bin | xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/bin/{} ~/bin/
 ```
 
 ### More repos to clone
