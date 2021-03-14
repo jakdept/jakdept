@@ -45,6 +45,8 @@ You should now have iterm. Open it and:
 * Change the font to hack
 * Set the default directory to ~/Downloads/
 * Set window transparency
+* Theme Compact
+* Disable copy on pasteboard selection (General -> Selection)
 
 ### Setup VSCode
 
