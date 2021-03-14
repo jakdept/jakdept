@@ -38,7 +38,6 @@ rpm
 s3cmd
 shellcheck
 shfmt
-sshpass
 telnet
 thefuck
 tmux
@@ -50,3 +49,7 @@ wget
 ykman
 ykpers
 yq
+iterm2
+homebrew/cask-fonts/font-hack-nerd-font
+visual-studio-code
+google-chrome
