@@ -48,6 +48,34 @@ You should now have iterm. Open it and:
 * Theme Compact
 * Disable copy on pasteboard selection (General -> Selection)
 
+### Git
+
+```bash
+brew install git-lfs
+git lfs install
+```
+
+```bash
+git config --global gc.reflogExpire never
+
+git config --global init.defaultBranch main
+git config --global push.default current
+git config --global pull.default current
+git config --global pull.rebase false
+git config --global alias.count '!git shortlog -sn'
+
+git config --global color.diff = auto
+git config --global color.status = auto
+git config --global color.branch = auto
+git config --global color.ui = true
+
+git config --global diff.tool = vimdiff
+git config --global merge.tool = vimdiff
+git config --global difftool.prompt = false
+git config --global core.editor = vim
+git config --global core.excludesfile = /Users/jhayhurst/.gitignore_global
+```
+
 ### Setup VSCode
 
 Install config files:
