@@ -89,6 +89,15 @@ github.com/jessfraz/udict \
 github.com/jakdept/spongebob
 ```
 
+### ClamAV
+
+```bash
+sudo ln ~/src/github.com/jakdept/jakdept/dotfiles/Library/LaunchAgents/sh.brew.clamav.freshclam.plist /Library/LaunchDaemons/
+sudo ln ~/src/github.com/jakdept/jakdept/dotfiles/Library/LaunchAgents/sh.brew.clamav.clamd.plist /Library/LaunchDaemons/
+sudo launchctl load /Library/LaunchDaemons/sh.brew.clamav.freshclam.plist
+sudo launchctl load /Library/LaunchDaemons/sh.brew.clamav.clamd.plist
+```
+
 ### Setup SSH key / GPG
 ```bash
 ls ~/src/github.com/jakdept/jakdept/dotfiles/home/.gnupg|xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/.gnupg/{} ~/.gnupg/
