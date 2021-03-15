@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Label</key>
+		<string>dev.go.pkg</string>
+		<key>EnvironmentVariables</key>
+		<dict>
+			<key>GOPATH</key>
+			<string>/Users/jhayhurst</string>
+			<key>GOROOT</key>
+			<string>/usr/local/go</string>
+		</dict>
+		<key>ProgramArguments</key>
+		<array>
+			<string>/Users/jhayhurst/bin/godoc</string>
+			<string>-http</string>
+			<string>localhost:6060</string>
+		</array>
+		<key>RunAtLoad</key>
+		<true/>
+		<key>StandardInPath</key>
+		<string>/dev/null</string>
+		<key>StandardOutPath</key>
+		<string>/dev/null</string>
+		<key>StandardErrorPath</key>
+		<string>/dev/null</string>
+	</dict>
+</plist>
+Raw
