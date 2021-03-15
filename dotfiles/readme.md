@@ -92,6 +92,9 @@ github.com/jakdept/spongebob
 ### ClamAV
 
 ```bash
+sudo xargs mkdir -p (find dotfiles/root -mindepth 1 -type d -print|sed 's/^dotfiles\/root//g'|sub)
+ln -f dotfiles/root/usr/local/etc/clamav/freshclam.conf dotfiles/root/usr/local/etc/clamav/freshclam.conf
+ln -f dotfiles/root/usr/local/etc/clamav/clamd.conf dotfiles/root/usr/local/etc/clamav/clamd.conf
 sudo ln ~/src/github.com/jakdept/jakdept/dotfiles/Library/LaunchAgents/sh.brew.clamav.freshclam.plist /Library/LaunchDaemons/
 sudo ln ~/src/github.com/jakdept/jakdept/dotfiles/Library/LaunchAgents/sh.brew.clamav.clamd.plist /Library/LaunchDaemons/
 sudo launchctl load /Library/LaunchDaemons/sh.brew.clamav.freshclam.plist

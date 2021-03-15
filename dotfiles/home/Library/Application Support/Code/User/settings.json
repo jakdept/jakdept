@@ -3,7 +3,6 @@
 	// editor view preferences
 	"workbench.colorTheme": "WarpOS", // theme
 	"editor.fontSize": 12,
-	"editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
 	"terminal.integrated.fontFamily": "Hack, Menlo, Monaco, Consolas, \"Droid Sans Mono\", \"Courier New\", monospace, \"Droid Sans Fallback\"",
 	"editor.renderWhitespace": "boundary",
 	"window.menuBarVisibility": "toggle", // hide menu bar - linux only
@@ -214,4 +213,5 @@
 	"yaml.schemas": {
 		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-2.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
 	},
+	"editor.fontFamily": "Hack Nerd Font Mono, Hack, Menlo, Monaco, 'Courier New', monospace",
 }
