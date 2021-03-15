@@ -5,13 +5,13 @@
 	<key>GroupName</key>
 	<string>clamav</string>
 	<key>Label</key>
-	<string>org.macports.freshclam</string>
+	<string>net.clamav.freshclam</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/usr/local/Cellar/clamav/0.103.1/bin/freshclam</string>
 		<string>--daemon</string>
 	</array>
-	<key>UserName</key>
-	<string>clamav</string>
+	<key>RunAtLoad</key>
+	<true/>
 </dict>
 </plist>
