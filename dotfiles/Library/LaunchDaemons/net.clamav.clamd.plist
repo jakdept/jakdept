@@ -4,14 +4,19 @@
 <dict>
 	<key>GroupName</key>
 	<string>clamav</string>
+	<key>KeepAlive</key>
+	<true/>
 	<key>Label</key>
-	<string>net.clamav.freshclam</string>
+	<string>sh.brew.clamav.clamd</string>
+	<key>OnDemand</key>
+	<true/>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/Cellar/clamav/0.103.1/bin/freshclam</string>
-		<string>--daemon</string>
+		<string>/usr/local/Cellar/clamav/0.103.1/sbin/clamd</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
+	<key>UserName</key>
+	<string>clamav</string>
 </dict>
 </plist>
