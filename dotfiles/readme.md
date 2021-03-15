@@ -95,9 +95,34 @@ ls ~/src/github.com/jakdept/jakdept/dotfiles/home/.gnupg|xargs -I{} ln ~/src/git
 ls ~/src/github.com/jakdept/jakdept/dotfiles/home/.ssh|xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/.ssh/{} ~/.ssh
 ```
 
+Trust your own GPG keys:
+```bash
+gpg --import (curl https://github.com/jakdept.gpg|sub)
+```
+
+That should output something like:
+```bash
+gpg: key 0xC31FCA1B173F01B5: public key "Jack Hayhurst <jakdept@gmail.com>" imported
+gpg: key 0x91BB20A6F956A176: public key "Jack Hayhurst <jhayhurst@liquidweb.com>" imported
+gpg: Total number processed: 2
+gpg:               imported: 2
+```
+
+Then for each:
+* `gpg --edit-key <key id> trust`
+* `5`
+* `y`
+
 ### Add in binaries
 ```bash
 ls ~/src/github.com/jakdept/jakdept/dotfiles/home/bin | xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/bin/{} ~/bin/
+```
+
+### macOS modifications
+
+Key repeat
+```bash
+defaults write -g ApplePressAndHoldEnabled -bool false
 ```
 
 ### More repos to clone
