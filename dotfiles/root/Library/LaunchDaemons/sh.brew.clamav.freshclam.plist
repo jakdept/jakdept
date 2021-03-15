@@ -8,7 +8,7 @@
 	<string>sh.brew.clamav.freshclam</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/Cellar/clamav/0.103.1/bin/freshclam</string>
+		<string>/usr/local/bin/freshclam</string>
 		<string>--daemon</string>
 	</array>
 	<key>RunAtLoad</key>

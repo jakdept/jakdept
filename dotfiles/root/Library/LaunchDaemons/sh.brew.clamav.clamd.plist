@@ -12,7 +12,7 @@
 	<true/>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/Cellar/clamav/0.103.1/sbin/clamd</string>
+		<string>/usr/local/sbin/clamd</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
