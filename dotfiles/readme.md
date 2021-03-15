@@ -101,6 +101,15 @@ sudo launchctl load /Library/LaunchDaemons/sh.brew.clamav.freshclam.plist
 sudo launchctl load /Library/LaunchDaemons/sh.brew.clamav.clamd.plist
 ```
 
+### Firewall
+
+```bash
+/usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
+/usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
+/usr/libexec/ApplicationFirewall/socketfilterfw --getglobalstate
+/usr/libexec/ApplicationFirewall/socketfilterfw --getstealthmode
+```
+
 ### Setup SSH key / GPG
 ```bash
 ls ~/src/github.com/jakdept/jakdept/dotfiles/home/.gnupg|xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/.gnupg/{} ~/.gnupg/
