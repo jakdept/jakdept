@@ -174,6 +174,12 @@ Key repeat
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
 
+Screenshot location
+```bash
+defaults write com.apple.screencapture location ~/Downloads
+killall SystemUIServer
+```
+
 ### More repos to clone
 
 ```

@@ -4,7 +4,7 @@ bats-core
 bit-git
 cmatrix
 cookiecoder15/tap/pipes-rs
-dash
+homebrew/cask/dash
 direnv
 dpkg
 ffmpeg
