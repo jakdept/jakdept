@@ -18,8 +18,7 @@
 	"editor.parameterHints.enabled": false, // use json editor instead of gui
 	"workbench.statusBar.visible": true, // bottom blue bar
 	"window.restoreWindows": "none", // onstartup do not restore windows
-	"workbench.editor.showTabs": true, // show tabs
-	"workbench.editor.labelFormat": "medium", // medium file paths
+	"workbench.editor.showTabs": true, // medium file paths
 	"explorer.confirmDragAndDrop": false, // do not prompt on drag and drop
 	"workbench.panel.defaultLocation": "right", // put cli panel on the right
 	"search.quickOpen.includeHistory": false, // do not show recently opened files
@@ -205,13 +204,62 @@
 	"todohighlight.isEnable": true,
 	"todo-tree.tree.showScanModeButton": false,
 	"gitlens.hovers.currentLine.over": "line",
-	"gitlens.codeLens.enabled": false,
 	"gitlens.statusBar.pullRequests.enabled": false,
 	"gitlens.hovers.avatars": false,
 	"gitlens.hovers.enabled": false,
 	"gitlens.views.fileHistory.avatars": false,
 	"yaml.schemas": {
-		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-2.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-2.8.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
 	},
 	"editor.fontFamily": "Hack Nerd Font Mono, Hack, Menlo, Monaco, 'Courier New', monospace",
+	"gitlens.views.commits.showBranchComparison": false,
+	"gitlens.views.commits.files.compact": false,
+	"gitlens.views.commits.avatars": false,
+	"gitlens.heatmap.locations": [
+		"gutter",
+		"overview"
+	],
+	"gitlens.defaultDateStyle": "absolute",
+	"gitlens.defaultDateFormat": "YYYY-MM-DDTHH:MM:00ZZ",
+	"gitlens.defaultDateShortFormat": null,
+	"gitlens.defaultTimeFormat": "HH:mm",
+	"gitlens.mode.statusBar.enabled": false,
+	"gitlens.menus": {
+		"editor": false,
+		"editorGroup": false,
+		"editorTab": false,
+		"explorer": false,
+		"scm": false,
+		"scmGroupInline": false,
+		"scmGroup": false,
+		"scmItem": false
+	},
+	"gitlens.blame.avatars": false,
+	"gitlens.views.searchAndCompare.avatars": false,
+	"gitlens.views.contributors.avatars": false,
+	"gitlens.views.tags.avatars": false,
+	"gitlens.views.remotes.avatars": false,
+	"gitlens.views.branches.avatars": false,
+	"gitlens.currentLine.scrollable": false,
+	"gitlens.codeLens.recentChange.command": false,
+	"gitlens.codeLens.recentChange.enabled": false,
+	"gitlens.codeLens.authors.command": false,
+	"gitlens.codeLens.authors.enabled": false,
+	"gitlens.codeLens.scopes": [],
+	"gitlens.views.repositories.avatars": false,
+	"gitlens.views.lineHistory.avatars": false,
+	"gitlens.codeLens.enabled": false,
+	"go.toolsManagement.autoUpdate": true,
+	"todo-tree.general.tags": [
+		"BUG",
+		"HACK",
+		"FIXME",
+		"TODO",
+		"XXX",
+		"[ ]",
+		"[x]"
+	],
+	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+	"workbench.editor.untitled.labelFormat": "name",
+	"workbench.editor.labelFormat": "short",
 }

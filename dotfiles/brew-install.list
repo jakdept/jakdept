@@ -3,7 +3,7 @@ bat
 bats-core
 bit-git
 cmatrix
-cookiecoder15/tap/pipes-rs
+lhvy/tap/pipes-rs
 homebrew/cask/dash
 direnv
 dpkg
