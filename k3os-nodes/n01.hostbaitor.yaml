@@ -1,6 +1,14 @@
+
+# replace lines below
+# run wget https://raw.githubusercontent.com/rancher/k3os/master/install.sh
+# chmod +x ./install.sh
+# 
+# ./install.sh --takeover --tty ttyS0 --no-format --config https://raw./k3os.hostbaitor.yaml /dev/vda3 https://github.com/rancher/k3os/releases/download/v0.10.0/k3os.iso
+
+
 ssh_authorized_keys:
 - github:jakdept
-hostname: $(hostname)
+hostname: n01.hostbaitor.com
 write_files:
 - path: /var/lib/connman/default.config
   owner: root:root
@@ -8,7 +16,7 @@ write_files:
     [service_eth0]
     Type=ethernet
     IPv6=off
-    $(ifconfig eth0|awk '$1 == "inet" {print "IPv4=" $2 "/" $4 "/" $6}')
+    IPv4=69.16.200.148/255.255.254.0/69.16.201.255
 
 k3os:
   sysctl:
