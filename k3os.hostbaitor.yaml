@@ -1,0 +1,28 @@
+ssh_authorized_keys:
+- github:jakdept
+hostname: $(hostname)
+write_files:
+- path: /var/lib/connman/default.config
+  owner: root:root
+  content: |-
+    [service_eth0]
+    Type=ethernet
+    IPv6=off
+    $(ifconfig eth0|awk '$1 == "inet" {print "IPv4=" $2 "/" $4 "/" $6}')
+
+k3os:
+  sysctl:
+    kernel.printk: "4 4 1 7"
+    kernel.kptr_restrict: "1"
+  dns_nameservers:
+  - 10.10.10.10
+  - 8.8.8.8
+  - 1.1.1.1
+  ntp_servers:
+  - 0.us.pool.ntp.org
+  - 1.us.pool.ntp.org
+  labels:
+    region: us-west-1
+  k3s_args:
+  - server
+  - "--disable-agent"
