@@ -66,6 +66,10 @@ Go revisit that.
 ### Replicated Stack
 
 You're going to have a replicated stack to do the scraping and alerting.
+##### `prometheus`
+
+https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus#configuration
+
 * `prometheus` - do the scraping
 * `blackbox_exporter` - `prometheus` scrapes against this to do ping etc...
 * `alertmanager` - prometheus sends it's stream of data and you get alerts
