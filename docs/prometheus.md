@@ -80,7 +80,7 @@ There will probably shortly be examples in here idk fam.
 
 ### Target Discovery
 Target discovery is difficult to do. You've got three basic options:
-* Use `counsul` - but then you're bought into the Hashicorp system.
+* Use `consul` - but then you're bought into the Hashicorp system.
 * Write out config files and do some Prometheus filtering on the config files you're reading in so you see that.
 * Maybe I write a service to do this?
 
