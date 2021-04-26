@@ -5,7 +5,10 @@
 # run wget https://raw.githubusercontent.com/rancher/k3os/master/install.sh
 # chmod +x ./install.sh
 # 
-# ./install.sh --takeover --tty ttyS0 --no-format --config /root/k3os.hostbaitor.yaml /dev/vda3 https://github.com/rancher/k3os/releases/download/v0.11.1/k3os-amd64.iso
+# ./install.sh --takeover --tty ttyS0 --no-format --config /root/k3os.hostbaitor.yaml /dev/vda3 $(curl -s https://api.github.com/repos/rancher/k3os/releases/latest|jq -r '.assets|.[].browser_download_url|select(.|test("amd64.iso"))')
+
+
+# ./install.sh --takeover --debug --tty tty1 --config /root/config.yaml /dev/vda $(curl -s https://api.github.com/repos/rancher/k3os/releases/latest|jq -r '.assets|.[].browser_download_url|select(.|test("amd64.iso"))')
 
 
 ssh_authorized_keys:
@@ -32,7 +35,7 @@ k3os:
   - 0.us.pool.ntp.org
   - 1.us.pool.ntp.org
   labels:
-    region: us-west-1
+    region: us-midwest-1
   k3s_args:
   - server
   - "--disable-agent"
