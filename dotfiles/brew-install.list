@@ -6,6 +6,7 @@ lhvy/tap/pipes-rs
 homebrew/cask/dash
 direnv
 dpkg
+docker
 ffmpeg
 fish
 git
@@ -17,6 +18,7 @@ hexyl
 htop
 httpie
 jq
+kubectl
 kubeseal
 lastpass-cli
 lsusb
