@@ -262,4 +262,8 @@
 	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
 	"workbench.editor.untitled.labelFormat": "name",
 	"workbench.editor.labelFormat": "short",
+	"vs-kubernetes": {
+		"vscode-kubernetes.minikube-path.mac": "/Users/jack/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+	},
+	"docker.showStartPage": false,
 }
