@@ -1,5 +1,7 @@
 # System setup
 
+## Primary system
+
 These are my dotfiles.
 
 I've used them to set up Linux and macOS systems in the past.
@@ -203,4 +205,16 @@ code --list-extensions > dotfiles/vscode-install.list
 Update Brew stuff:
 ```bash
 brew list > dotfiles/brew-install.list
+```
+
+## Secondary System
+
+Let's be real - install fish cause it's nice, but also you just do everything in docker anyway.
+
+```
+docker run -d --name tailscale --restart=unless-stopped -e UP_FLAGS="-hostname $(hostname)" --network=host deasmi/unraid-tailscale
+```
+
+```
+docker run -d --name sshb0t --restart always -v ${HOME}/.ssh/authorized_keys:/root/.ssh/authorized_keys r.j3ss.co/sshb0t --user jakdept --keyfile /root/.ssh/authorized_keys
 ```
