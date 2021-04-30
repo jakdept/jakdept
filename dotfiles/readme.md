@@ -185,6 +185,7 @@ killall SystemUIServer
 ### More repos to clone
 
 ```
+git@gitlab.com:openconnect/openconnect.git
 https://github.com/apache/httpd.git
 git@github.com:php/php-src.git
 https://gitlab.com/gitlab-org/gitlab-runner.git
