@@ -1,0 +1,4 @@
+#!/bin/bash
+
+date
+sudo openconnect https://emp.vpngw.liquidweb.com --csd-wrapper=/Users/jack/src/gitlab.com/openconnect/openconnect/trojans/csd-post.sh
