@@ -212,6 +212,13 @@ brew list > dotfiles/brew-install.list
 
 Let's be real - install fish cause it's nice, but also you just do everything in docker anyway.
 
+Go install docker. Then:
+```bash
+sudo groupadd docker
+sudo usermod -aG docker $USER
+printf '%s ALL=(ALL) NOPASSWD: ALL\n' "$USER" | sudo tee -a /etc/sudoers
+```
+
 ```
 docker run -d --name tailscale --restart=unless-stopped -e UP_FLAGS="-hostname $(hostname)" --network=host deasmi/unraid-tailscale
 ```
