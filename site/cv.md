@@ -3,7 +3,6 @@ layout: cv
 title: Jack Hayhurst's CV
 ---
 
-`First Name / Surname`
 # Jack Hayhurst
 
 ### Location
