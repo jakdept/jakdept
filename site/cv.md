@@ -72,19 +72,17 @@ __United States Citizen__
 
 ## Skills & Experience
 
-### About 200 Hosts
+### Scope 200 Hosts
 - __Fully Managed Systems__
 - Puppet/Salt/Ansible
 - Kubernetes / Helm / Flux / Rancher
 - RabbitMQ
-- Cassandra
-- ElasticSearch
-- Postgres
 - PowerDNS
+- Cassandra / ElasticSearch / Postgres
 - MySQL, Nginx, Apache, PHP, Perl
 - Ceph Cluster ~12 Petabyte
 
-### About 40k Hosts
+### Scope 40k Hosts
 - __Partially Managed Systems__
 - Prometheus Cluster, >40k targets
 - Ansible, >40k Targets
