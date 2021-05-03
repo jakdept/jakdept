@@ -73,8 +73,8 @@ title: Jack Hayhurst Curriculum Vitae
 
 ### Programming Languages
 - ⭐️⭐️⭐️⭐️⭐️ Go / Bash / Python
-- ⭐️⭐️⭐️ PHP
-- ⭐️⭐️ C / C++ / Perl
+- ⭐️⭐️⭐️⭐️ PHP / Perl
+- ⭐️⭐️ C / C++
 - ⭐️ Rust / Ruby
 
 
