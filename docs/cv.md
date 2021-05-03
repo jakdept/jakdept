@@ -5,11 +5,9 @@ title: Jack Hayhurst Curriculum Vitae
 
 # Jack Hayhurst
 
-### Location
+## Personal Information
 - 📍 __Lansing, MI, United States__
 - 💻 __Remote Worker__
-
-### Online Profiles
 - 📧 [jakdept@gmail.com](mailto:jakdept@gmail.com)
 - 📧 [james.a.hayhurst@gmail.com](mailto:james.a.hayhurst@gmail.com)
 - Github - [jakdept](https://github.com/jakdept)
