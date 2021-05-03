@@ -18,7 +18,7 @@ title: Jack Hayhurst Curriculum Vitae
 - Twitter - [jakdept](https://twitter.com/jakdept)
 
 ## Desired Employment
-Site Reliability Engineer
+- Site Reliability Engineer
 
 ## Work Experience
 
