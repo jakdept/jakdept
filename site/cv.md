@@ -69,10 +69,8 @@ __GFS Marketplace Edgewood__
 
 ### Graduated 2010
 __Anderson Universiy__
-
-Bachelor of Arts
-
-Computer Science Major
+- Bachelor of Arts
+- Computer Science Major
 
 ## Certifications
 
