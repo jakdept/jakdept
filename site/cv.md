@@ -6,31 +6,29 @@ title: Jack Hayhurst's CV
 `First Name / Surname`
 # Jack Hayhurst
 
-`Location`
+### Location
 __Lansing, MI, United States__
 __Remote Worker__
 
-`Email`
+### Email
 <a href="mailto:jakdept@gmail.com">jakdept@gmail.com</a>
 
 <a href="mailto:james.a.hayhurst@gmail.com">james.a.hayhurst@gmail.com</a>
 
-`GitHub`
+### GitHub
 <a href="https://github.com/jakdept">@jakdept</a>
 
-`Twitter`
+### Twitter
 <a href="https://twitter.com/jakdept">@jakdept</a>
 
-`Nationality`
+### Nationality
 __United States Citizen__
 
-`Date of Birth`
+### Date of Birth
 1984-07-02
 
-`Gender`
+### Gender
 Male
-
-
 
 ## Desired employment / Occupation Field
 Site Reliability Engineer
@@ -69,9 +67,11 @@ __GFS Marketplace Edgewood__
 
 ## Education and Training
 
-`Graduated 2010`
+### Graduated 2010
 __Anderson Universiy__
+
 Bachelor of Arts
+
 Computer Science Major
 
 ## Certifications
