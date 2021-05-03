@@ -89,7 +89,8 @@ ul {
 	left: 25%;
 	width: 75%;
 	margin-bottom: 0em;
-	margin-top: -0.5em;
+	/* margin-top: -0.5em; */
+	margin-top: -0.1em;
 }
 
 /*uncomment to get dashes in the list*/
