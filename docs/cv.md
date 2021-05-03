@@ -8,7 +8,7 @@ title: Jack Hayhurst Curriculum Vitae
 ## Personal Information
 - 📍 __Lansing, MI, United States__
 - 💻 __Remote Worker__
-- DOB 1984-07-02
+- _Date of Birth_ 1984-07-02 _Gender_ Male
 - Gender Male
 
 ### Contact Info
