@@ -58,8 +58,8 @@ __United States Citizen__
 ## Education
 
 ### 2008-2010
-- __Anderson Universiy__, Bachelor of Arts
-- Computer Science Major
+- __Anderson Universiy__
+- Bachelor of Arts, Computer Science Major
 
 ## Certifications
 
