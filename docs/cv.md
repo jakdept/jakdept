@@ -31,9 +31,6 @@ title: Jack Hayhurst Curriculum Vitae
 ## Desired Employment
 - Site Reliability Engineer
 
-## Currently
-- Site Reliability Engineer
-
 ## Work Experience
 
 ### 2017-03 - Current
