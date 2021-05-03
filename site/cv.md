@@ -10,55 +10,54 @@ __Lansing, MI, United States__
 __Remote Worker__
 
 ### Email
-<a href="mailto:jakdept@gmail.com">jakdept@gmail.com</a>
-
-<a href="mailto:james.a.hayhurst@gmail.com">james.a.hayhurst@gmail.com</a>
+- [jakdept@gmail.com](mailto:jakdept@gmail.com)
+- [james.a.hayhurst@gmail.com](mailto:james.a.hayhurst@gmail.com)
 
 ### GitHub
-<a href="https://github.com/jakdept">@jakdept</a>
+- [jakdept](https://github.com/jakdept)
 
 ### Twitter
-<a href="https://twitter.com/jakdept">@jakdept</a>
+- [jakdept](https://twitter.com/jakdept)
 
 ### Nationality
 __United States Citizen__
 
 ### Date of Birth
-1984-07-02
+- 1984-07-02
 
 ### Gender
-Male
+- Male
 
 ## Desired employment / Occupation Field
-Site Reliability Engineer
+- Site Reliability Engineer
 
 ## Currently
-SRE at Liquid Web Inc
+- Site Reliability Engineer
 
 ## Work Experience
 
 ### March 2017 - Current
-__Liquid Web Inc__
+- __Liquid Web Inc__
 - Site Reliability Engineer
 - Security Engineer
 - Database Engineer
 
 ### 2011-06-02 - 2017-03-01
-__Liquid Web Inc__
+- __Liquid Web Inc__
 - Senior System Administrator
 
 ### 2011-01-01 - 2011-06-02
-__Liquid Web Inc__
+- __Liquid Web Inc__
 - System Administrator
 
 ### 2008-05-01 - 2010-06-01
-__SRC Anderson University__
+- __Software Research Center, Anderson University__
 - Support Manager
 
 ## Education and Training
 
 ### 2010
-__Anderson Universiy, Anderson IN__
+- __Anderson Universiy, Anderson IN__
 - Bachelor of Arts
 - Computer Science Major
 
@@ -66,20 +65,38 @@ __Anderson Universiy, Anderson IN__
 
 ### Redhat Certified Professional
 
-130-148-380
-
-RHCSA - 2013 (expired)
-
-RHCE - 2016 (expired)
+- __RedHat__ - 130-148-380
+- RHCSA - 2013 (expired)
+- RHCE - 2016 (expired)
 
 
-### Specialized in
+## Notable Systems
+
+### Ceph Cluster
+- Ceph Cluster, >20 PB
+
+### Fully Managed Hosts
+- __Around 300 Hosts__
+- RabbitMQ
+- Cassandra
+- ElasticSearch
+- Postgres
+- Puppet
+- PowerDNS
+- MySQL, Nginx, Apache, PHP
+
+### Partially Managed Hosts Fleet
+- __Around 40k Hosts__
+- Custom Go Telemetry
+- Prometheus Cluster, >40k targets
+- Ansible, >40k Targets
+- rpmbuild and debuild Packaging & Repositories
 
 
 
 
 <!-- ### Footer
 
-Last updated: May 2013 -->
+Last updated: May 2021 -->
 
 
