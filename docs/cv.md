@@ -6,21 +6,14 @@ title: Jack Hayhurst Curriculum Vitae
 # Jack Hayhurst
 
 ### Location
-- __Lansing, MI, United States__
-- __Remote Worker__
+- 📍 __Lansing, MI, United States__
+- 💻 __Remote Worker__
 
-### Email
-- [jakdept@gmail.com](mailto:jakdept@gmail.com)
-- [james.a.hayhurst@gmail.com](mailto:james.a.hayhurst@gmail.com)
-
-### GitHub
-- [jakdept](https://github.com/jakdept)
-
-### Twitter
-- [jakdept](https://twitter.com/jakdept)
-
-### Nationality
-- __United States Citizen__
+### Online Profiles
+- 📧 [jakdept@gmail.com](mailto:jakdept@gmail.com)
+- 📧 [james.a.hayhurst@gmail.com](mailto:james.a.hayhurst@gmail.com)
+- Github - [jakdept](https://github.com/jakdept)
+- Twitter - [jakdept](https://twitter.com/jakdept)
 
 ### Date of Birth
 - 1984-07-02
