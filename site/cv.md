@@ -39,8 +39,9 @@ __United States Citizen__
 ### March 2017 - Current
 - __Liquid Web Inc__
 - Site Reliability Engineer
-- Security Engineer
-- Database Engineer
+- Senior Developer
+- Senior Security Engineer
+- Senior Database Engineer
 
 ### 2011-06-02 - 2017-03-01
 - __Liquid Web Inc__
@@ -70,27 +71,36 @@ __United States Citizen__
 - RHCE - 2016 (expired)
 
 
-## Notable Systems
+## Skills & Experience
 
-### Ceph Cluster
-- Ceph Cluster, >20 PB
-
-### Fully Managed Hosts
-- __Around 300 Hosts__
+### About 200 Hosts
+- __Fully Managed Systems__
+- Puppet/Salt/Ansible
+- Kubernetes / Helm / Flux / Rancher
 - RabbitMQ
 - Cassandra
 - ElasticSearch
 - Postgres
-- Puppet
 - PowerDNS
-- MySQL, Nginx, Apache, PHP
+- MySQL, Nginx, Apache, PHP, Perl
+- Ceph Cluster ~12 Petabyte
 
-### Partially Managed Hosts Fleet
-- __Around 40k Hosts__
-- Custom Go Telemetry
+### About 40k Hosts
+- __Partially Managed Systems__
 - Prometheus Cluster, >40k targets
 - Ansible, >40k Targets
-- rpmbuild and debuild Packaging & Repositories
+- `rpmbuild` and `debuild` Packaging & Repositories
+
+### Programming Languages
+- ⭐️⭐️⭐️⭐️⭐️ Go
+- ⭐️⭐️⭐️⭐️⭐️ Bash
+- ⭐️⭐️⭐️⭐️ Python
+- ⭐️⭐️⭐️ PHP
+- ⭐️⭐️ C
+- ⭐️⭐️ C++
+- ⭐️️⭐️️ Perl
+- ⭐️ Rust
+- ⭐️ Ruby
 
 
 
