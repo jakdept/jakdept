@@ -52,23 +52,14 @@ __Liquid Web Inc__
 __Liquid Web Inc__
 - System Administrator
 
-### 2009-08-01 - 2010-08-01
-__GFS Marketplace Anderson__
-- Sales Associate
-
-### 2008-05-01 - 2009-06-01
+### 2008-05-01 - 2010-06-01
 __SRC Anderson University__
 - Support Manager
 
-### 2005-06-01 - 2007-08-31
-__GFS Marketplace Edgewood__
-- Sales Associate
-
-
 ## Education and Training
 
-### Graduated 2010
-__Anderson Universiy__
+### 2010
+__Anderson Universiy, Anderson IN__
 - Bachelor of Arts
 - Computer Science Major
 
