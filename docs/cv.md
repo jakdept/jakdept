@@ -19,6 +19,7 @@ title: Jack Hayhurst Curriculum Vitae
 
 ## Desired Employment
 - Site Reliability Engineer
+- Developer/DevOps with Kubernetes and Security Focus
 
 ## Work Experience
 ---
