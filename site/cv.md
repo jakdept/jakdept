@@ -72,7 +72,7 @@ __United States Citizen__
 
 ## Skills & Experience
 
-### Scope 200 Hosts
+### 200 Host Clusters
 - __Fully Managed Systems__
 - Puppet/Salt/Ansible
 - Kubernetes / Helm / Flux / Rancher
@@ -82,22 +82,17 @@ __United States Citizen__
 - MySQL, Nginx, Apache, PHP, Perl
 - Ceph Cluster ~12 Petabyte
 
-### Scope 40k Hosts
+### 40k Distinct Hosts
 - __Partially Managed Systems__
-- Prometheus Cluster, >40k targets
-- Ansible, >40k Targets
+- Prometheus
+- Ansible
 - rpmbuild & debuild Packaging & Repositories
 
 ### Programming Languages
-- ⭐️⭐️⭐️⭐️⭐️ Go
-- ⭐️⭐️⭐️⭐️⭐️ Bash
-- ⭐️⭐️⭐️⭐️ Python
+- ⭐️⭐️⭐️⭐️⭐️ Go / Bash / Python
 - ⭐️⭐️⭐️ PHP
-- ⭐️⭐️ C
-- ⭐️⭐️ C++
-- ⭐️️⭐️️ Perl
-- ⭐️ Rust
-- ⭐️ Ruby
+- ⭐️⭐️ C / C++ / Perl
+- ⭐️ Rust / Ruby
 
 
 
