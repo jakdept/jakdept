@@ -89,7 +89,7 @@ __United States Citizen__
 - __Partially Managed Systems__
 - Prometheus Cluster, >40k targets
 - Ansible, >40k Targets
-- `rpmbuild` and `debuild` Packaging & Repositories
+- rpmbuild & debuild Packaging & Repositories
 
 ### Programming Languages
 - ⭐️⭐️⭐️⭐️⭐️ Go
