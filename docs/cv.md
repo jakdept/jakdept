@@ -68,8 +68,8 @@ title: Jack Hayhurst Curriculum Vitae
 - RabbitMQ
 - PowerDNS
 
-### 40k Distinct Hosts
-- __Partially Managed Systems__
+### 40k Host Fleet
+- __Services Provided to Systems__
 - Prometheus
 - Ansible
 - rpmbuild & debuild Packaging & Repositories
