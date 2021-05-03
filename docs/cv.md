@@ -43,15 +43,15 @@ title: Jack Hayhurst Curriculum Vitae
 - Senior Security Engineer
 - Senior Database Engineer
 
-### 2011-06-02 - 2017-03-01
+### 2011-06 - 2017-03
 - __Liquid Web Inc__
 - Senior System Administrator
 
-### 2011-01-01 - 2011-06-02
+### 2011-01 - 2011-06
 - __Liquid Web Inc__
 - System Administrator
 
-### 2008-05-01 - 2010-06-01
+### 2008-05 - 2010-06
 - __Software Research Center, Anderson University__
 - Support Manager
 

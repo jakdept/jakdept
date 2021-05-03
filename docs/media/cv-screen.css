@@ -54,10 +54,10 @@ table {
 body {
 	font: normal normal 400;
 	font-size: 100%;
-	line-height: 1.5em;
+	line-height: 1.3em;
 	/*also written as...  font: normal normal 400 100%/1.5em;*/
 	font-family: Avenir,Verdana,sans-serif;
-	margin-top: 1em;
+	margin-top: 0.2em;
 	margin-left: 1em;
 }
 
@@ -89,7 +89,7 @@ ul {
 	left: 25%;
 	width: 75%;
 	margin-bottom: 0em;
-	margin-top: -0.5em;
+	/* margin-top: -0.5em; */
 }
 
 /*uncomment to get dashes in the list*/
