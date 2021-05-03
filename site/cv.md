@@ -28,7 +28,7 @@ __United States Citizen__
 ### Gender
 - Male
 
-## Desired employment / Occupation Field
+## Desired Employment
 - Site Reliability Engineer
 
 ## Currently
@@ -55,11 +55,10 @@ __United States Citizen__
 - __Software Research Center, Anderson University__
 - Support Manager
 
-## Education and Training
+## Education
 
-### 2010
-- __Anderson Universiy, Anderson IN__
-- Bachelor of Arts
+### 2008-2010
+- __Anderson Universiy__, Bachelor of Arts
 - Computer Science Major
 
 ## Certifications
