@@ -33,38 +33,36 @@ Male
 
 
 ## Desired employment / Occupation Field
-SRE - Developer/Operations
-Security Engineer
-Database Engineer
+Site Reliability Engineer
 
 ## Currently
 SRE at Liquid Web Inc
 
 ## Work Experience
 
-#### March 2017 - Current
+### March 2017 - Current
 __Liquid Web Inc__
 - Site Reliability Engineer
 - Security Engineer
 - Database Engineer
 
-#### 2011-06-02 - 2017-03-01
+### 2011-06-02 - 2017-03-01
 __Liquid Web Inc__
 - Senior System Administrator
 
-#### 2011-01-01 - 2011-06-02
+### 2011-01-01 - 2011-06-02
 __Liquid Web Inc__
 - System Administrator
 
-#### 2009-08-01 - 2010-08-01
+### 2009-08-01 - 2010-08-01
 __GFS Marketplace Anderson__
 - Sales Associate
 
-#### 2008-05-01 - 2009-06-01
+### 2008-05-01 - 2009-06-01
 __SRC Anderson University__
 - Support Manager
 
-#### 2005-06-01 - 2007-08-31
+### 2005-06-01 - 2007-08-31
 __GFS Marketplace Edgewood__
 - Sales Associate
 
@@ -78,7 +76,7 @@ Computer Science Major
 
 ## Certifications
 
-`Redhat Certified Professional`
+### Redhat Certified Professional
 
 130-148-380
 
