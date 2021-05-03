@@ -1,6 +1,6 @@
 ---
 layout: cv
-title: Jack Hayhurst's CV
+title: Jack Hayhurst Curriculum Vitae
 ---
 
 # Jack Hayhurst
