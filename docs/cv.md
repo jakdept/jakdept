@@ -22,7 +22,6 @@ title: Jack Hayhurst Curriculum Vitae
 - Developer/DevOps with Kubernetes and Security Focus
 
 ## Work Experience
----
 ### 2017-03 - Current
 - __Liquid Web Inc__
 - Site Reliability Engineer
@@ -43,13 +42,11 @@ title: Jack Hayhurst Curriculum Vitae
 - Support Manager
 
 ## Education
----
 ### 2008-2010
 - __Anderson Universiy__
 - Bachelor of Arts, Computer Science Major
 
 ## Certifications
----
 ### Redhat
 
 - [Certificate ID 130-148-380](https://rhtapps.redhat.com/verify?certId=130-148-380)
@@ -58,7 +55,6 @@ title: Jack Hayhurst Curriculum Vitae
 
 
 ## Skills & Experience
----
 ### 200 Host Clusters
 - __Fully Managed Systems__
 - Puppet/Salt/Ansible
