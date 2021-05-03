@@ -89,15 +89,15 @@ ul {
 	left: 25%;
 	width: 75%;
 	margin-bottom: 0em;
-	/* margin-top: -0.5em; */
+	margin-top: -0.5em;
 }
 
 /*uncomment to get dashes in the list*/
-/*li:before {
+/* li:before {
 	content: "-";
 	position: relative;
 	left: -0.25em;
-}*/
+} */
 
 li {
 	/*second line indent*/
@@ -136,7 +136,8 @@ h1+p {
 h2 {
 	font-size: 1.1em;
 	color: #bc412b;
-	margin-top: 3em;
+	margin-top: 1em;
+	/* margin-top: 2em; */
 	position: relative;
 	top: 1.4em;
 	text-align: right;
