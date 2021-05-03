@@ -76,11 +76,11 @@ __United States Citizen__
 - __Fully Managed Systems__
 - Puppet/Salt/Ansible
 - Kubernetes / Helm / Flux / Rancher
+- Cassandra / ElasticSearch / Postgres / MySQL
+- Nginx, Apache, PHP, Perl
+- Ceph Cluster ~12 Petabyte
 - RabbitMQ
 - PowerDNS
-- Cassandra / ElasticSearch / Postgres
-- MySQL, Nginx, Apache, PHP, Perl
-- Ceph Cluster ~12 Petabyte
 
 ### 40k Distinct Hosts
 - __Partially Managed Systems__
