@@ -63,9 +63,9 @@ __United States Citizen__
 
 ## Certifications
 
-### Redhat Certified Professional
+### Redhat
 
-- __RedHat__ - 130-148-380
+- [__RedHat__ - 130-148-380](https://rhtapps.redhat.com/verify?certId=130-148-380)
 - RHCSA - 2013 (expired)
 - RHCE - 2016 (expired)
 
