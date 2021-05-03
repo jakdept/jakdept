@@ -36,7 +36,7 @@ title: Jack Hayhurst Curriculum Vitae
 
 ## Work Experience
 
-### March 2017 - Current
+### 2017-03 - Current
 - __Liquid Web Inc__
 - Site Reliability Engineer
 - Senior Developer
