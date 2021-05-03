@@ -76,9 +76,6 @@ __Anderson Universiy__
 Bachelor of Arts
 Computer Science Major
 
-`Graduated 2003`
-__Holt High School__
-
 ## Certifications
 
 `Redhat Certified Professional`
