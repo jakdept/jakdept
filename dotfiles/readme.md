@@ -171,15 +171,51 @@ ls ~/src/github.com/jakdept/jakdept/dotfiles/home/bin | xargs -I{} ln ~/src/gith
 
 ### macOS modifications
 
-Key repeat
 ```bash
-defaults write -g ApplePressAndHoldEnabled -bool false
-```
+defaults write -g ApplePressAndHoldEnabled -bool false # key repeat
 
-Screenshot location
-```bash
-defaults write com.apple.screencapture location ~/Downloads
+defaults write com.apple.screencapture location ~/Downloads # screencapture location
+defaults write com.Apple.Accessibility AccessibilityEnabled -bool False # disable accessibility stuff
+defaults write com.apple.airplay showInMenuBarIfPresent -bool False
+defaults write com.apple.HIToolbox AppleDictationAutoEnable -int 0
+
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool True # tap to click
+defaults write com.apple.AppleMultitouchTrackpad Dragging -bool False # tap & retap to drag (trash)
+defaults write com.apple.AppleMultitouchTrackpad ForceSuppressed -bool True # disable force touch
+defaults write com.apple.AppleMultitouchTrackpad TrackpadRotate -bool False # disable rotate
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFiveFingerPinchGesture -int 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerPinchGesture -int 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -int 1 # drag with 3 fingers
+defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerVertSwipeGesture -int 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerDoubleTapGesture -int 0
+
+defaults write com.apple.dock autohide -bool True
+defaults write com.apple.dock tilesize -int 30
+defaults write com.apple.dock largesize -int 70
+defaults write com.apple.dock magnification -bool True
+defaults write com.apple.dock show-recents -bool False
+defaults write com.apple.dock showDesktopGestureEnabled -bool False
+defaults write com.apple.dock showLaunchpadGestureEnabled -bool False
+defaults write com.apple.dock showMissionControlGestureEnabled -bool False
+
+defaults write com.apple.finder ShowPathbar -bool True
+defaults write com.apple.finder ShowRecentTags -bool False
+defaults write com.apple.finder ShowSidebar -bool True
+defaults write com.apple.finder SidebarShowingiCloudDesktop -bool False
+
+defaults write com.apple.menuextra.clock DateFormat -string "EEE H:mm"
+defaults write com.apple.menuextra.clock IsAnalog -bool False
+defaults write com.apple.menuextra.clock Show24Hour -bool True
+defaults write com.apple.menuextra.clock ShowDayOfMonth -bool False
+defaults write com.apple.menuextra.clock ShowDayOfWeek -bool True
+
+# touchbar
+defaults write com.apple.controlstrip MiniCustomized -array com.apple.system.brightness com.apple.system.mute com.apple.system.volume com.apple.system.media-play-pause
+
 killall SystemUIServer
+killall Dock
+killall Finder
+killall ControlStrip
 ```
 
 ### More repos to clone
