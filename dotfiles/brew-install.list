@@ -33,6 +33,7 @@ rpm
 s3cmd
 shellcheck
 shfmt
+signal
 telnet
 tmux
 tree
