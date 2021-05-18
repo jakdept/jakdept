@@ -14,3 +14,6 @@ Previously, I have worked as a Database Engineer, Security Engineer, and Develop
 * [jakdept/clapback](https://github.com/jakdept/clapback) - 👏 sometimes 👏 you 👏 need 👏 to 👏 make 👏 a 👏 point 👏
 * [jakdept/spongebob](https://github.com/jakdept/spongebob) - sOmEtImEs tHe pOiNt mAkEs iTsElF
 * [jakdept/sp9k1](https://github.com/jakdept/sp9k1) - sometimes you just gotta 💩📮
+
+Tutorial sites:
+- [exercism.io](https://exercism.io) - [jakdept](https://exercism.io/profiles/jakdept)
