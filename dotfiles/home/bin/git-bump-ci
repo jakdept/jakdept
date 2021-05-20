@@ -1,13 +1,13 @@
 #!/bin/bash
 
 msg=(
-  '✈️ Red Leader, this is Gold Leader. We''re starting our attack run.'
-  '✈️ lets try spinning thats a cool trick'
+  '✈️  Red Leader, this is Gold Leader. We''re starting our attack run.'
+  '✈️  lets try spinning thats a cool trick'
   '⏳ i don''t like sand. it''s coarse, rough and irritating, and it gets everywhere'
   '😎 "iT''s eASieR sAiD ThAn DOne" buddy that''s why i say things and don''t do them'
   '💻 teaching sand to think was a mistake'
   '🐤 mess wit teh honk u git teh bonk'
-  '🧑‍💻 The Jira will continue until morale improves.'
+  '💻 The Jira will continue until morale improves.'
 )
 
 git commit --allow-empty -m "${msg[$RANDOM % 3]}" && git push
