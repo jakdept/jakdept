@@ -1,8 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
 	// editor view preferences
-	"workbench.colorTheme": "WarpOS", // theme
-	"editor.fontSize": 12,
+	"workbench.colorTheme": "WarpOS",
 	"terminal.integrated.fontFamily": "Hack, Menlo, Monaco, Consolas, \"Droid Sans Mono\", \"Courier New\", monospace, \"Droid Sans Fallback\"",
 	"editor.renderWhitespace": "boundary",
 	"window.menuBarVisibility": "toggle", // hide menu bar - linux only
@@ -17,8 +16,7 @@
 	"files.autoSave": "onFocusChange", // autosave when switching apps
 	"editor.parameterHints.enabled": false, // use json editor instead of gui
 	"workbench.statusBar.visible": true, // bottom blue bar
-	"window.restoreWindows": "none", // onstartup do not restore windows
-	"workbench.editor.showTabs": true, // medium file paths
+	"window.restoreWindows": "none", // medium file paths
 	"explorer.confirmDragAndDrop": false, // do not prompt on drag and drop
 	"workbench.panel.defaultLocation": "right", // put cli panel on the right
 	"search.quickOpen.includeHistory": false, // do not show recently opened files
@@ -43,9 +41,7 @@
 	"gitlab.showPipelineUpdateNotifications": false,
 	"git.enableSmartCommit": true,
 	"git.enableCommitSigning": false, // only works if you have a GPG key set up
-	"gitlens.keymap": "none", // disable some git comments (slow)
-	// side by side diff splits 1 normal sized pane in half which is too small
-	"diffEditor.renderSideBySide": false, // do inline diff
+	"gitlens.keymap": "none", // do inline diff
 	//
 	//
 	// some editor defaults
@@ -80,7 +76,7 @@
 	// Run Lint tool on save.
 	"go.lintOnSave": "package",
 	// Specifies Lint tool name.
-	"go.lintTool": "golangci-lint",
+	// "go.lintTool": "golangci-lint",
 	// https://github.com/alecthomas/gometalinter#supported-linters
 	"go.lintFlags": [
 		"--enable=deadcode",
@@ -113,13 +109,13 @@
 	"go.vetOnSave": "package",
 	"go.coverOnSave": true,
 	"go.toolsEnvVars": {
-		"CGO_ENABLED": 1
+		"CGO_ENABLED": 1,
 	},
-	"go.useLanguageServer": true,
+	// "go.useLanguageServer": true,
 	"python.pythonPath": "python3",
 	"material-icon-theme.showUpdateMessage": false,
 	"extensions.ignoreRecommendations": false,
-	"window.newWindowDimensions": "inherit",
+	"window.newWindowDimensions": "offset",
 	"zenMode.hideActivityBar": false,
 	"zenMode.hideLineNumbers": false,
 	"zenMode.hideStatusBar": false,
@@ -266,4 +262,22 @@
 		"vscode-kubernetes.minikube-path.mac": "/Users/jack/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
 	},
 	"docker.showStartPage": false,
+	"workbench.preferredDarkColorTheme": "WarpOS",
+	"window.nativeTabs": true,
+	"[html]": {
+		"editor.defaultFormatter": "HookyQR.beautify"
+	},
+	"terminal.integrated.tabs.enabled": true,
+	"workbench.editorAssociations": [
+		{
+			"viewType": "jupyter.notebook.ipynb",
+			"filenamePattern": "*.ipynb"
+		}
+	],
+	"explorer.autoReveal": false,
+	"shellcheck.exclude": [
+		"2006"
+	],
+	// side by side editor, inline is too small
+	"diffEditor.renderSideBySide": false,
 }
