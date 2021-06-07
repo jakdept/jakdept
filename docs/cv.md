@@ -19,19 +19,25 @@ title: Jack Hayhurst Curriculum Vitae
 
 ## Desired Employment
 - Site Reliability Engineer
-- Developer/DevOps with Kubernetes and Security Focus
+- Developer/DevOps with Kubernetes Focus
 
 ## Work Experience
 ### 2017-03 - Current
-- __Liquid Web Inc__
-- Site Reliability Engineer
-- Senior Developer
-- Senior Security Engineer
-- Senior Database Engineer
+- __Liquid Web Inc__ - SRE
+- Prometheus Cluster with >40k targets, authored new exporters
+- Ceph Cluster with 16PB+ of storage
+- Ansible with custom credentials module (author) targeting >50k targets
+- Tickstak metrics with >20k targets
+- Custom telemetry tooling
+- Asterisk cluster
+- Debbuild/RPMbuild packaging for custom tools + maintaining local distro mirrors
+
 
 ### 2011-06 - 2017-03
-- __Liquid Web Inc__
-- Senior System Administrator
+- __Liquid Web Inc__ - Senior System Administrator
+- Fleet-wide Exim configuration, 10k+ targets
+- Firewall management packages, 30k+ targets
+- Custom MySQL tooling, hard crashed MySQL data extraction a few times
 
 ### 2011-01 - 2011-06
 - __Liquid Web Inc__

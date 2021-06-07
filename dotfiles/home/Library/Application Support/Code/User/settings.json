@@ -280,4 +280,5 @@
 	],
 	// side by side editor, inline is too small
 	"diffEditor.renderSideBySide": false,
+	"redhat.telemetry.enabled": false,
 }
