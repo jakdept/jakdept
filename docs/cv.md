@@ -60,7 +60,7 @@ title: Jack Hayhurst Curriculum Vitae
 
 ## Skills & Experience
 - __Ordered by Personal Fondness__
-- Key: Can read 1 star items, Comfortable with Major contributions to 5 star items
+- Key: 1 star beginner, 5 stars expert
 
 ### Programming Languages
 - ⭐️️⭐️️️⭐⭐️️ Go / Bash
