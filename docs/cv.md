@@ -24,28 +24,26 @@ title: Jack Hayhurst Curriculum Vitae
 ## Work Experience
 ### 2017-03 - Current
 - __Liquid Web Inc__ - SRE
-- Prometheus Cluster with >40k targets, authored new exporters
-- Ceph Cluster with 16PB+ of storage
-- Ansible with custom credentials module (author) targeting >50k targets
-- Tickstak metrics with >20k targets
-- Custom telemetry tooling
+- Prometheus Cluster, >40k targets
+- Ceph Cluster, >16PB
+- Ansible, >40k targets, Dynamic Credentials Module Author
+- Tickstak, >20k targets
+- Custom Telemetry Tooling
 - Asterisk cluster
 - Debbuild/RPMbuild packaging for custom tools + maintaining local distro mirrors
 
 
 ### 2011-06 - 2017-03
 - __Liquid Web Inc__ - Senior System Administrator
-- Fleet-wide Exim configuration, 10k+ targets
+- Fleet-wide Exim configuration packages, 10k+ targets
 - Firewall management packages, 30k+ targets
-- Custom MySQL tooling, hard crashed MySQL data extraction a few times
+- Custom MySQL tooling
 
 ### 2011-01 - 2011-06
-- __Liquid Web Inc__
-- System Administrator
+- __Liquid Web Inc__ - System Administrator
 
 ### 2008-05 - 2010-06
-- __Software Research Center, Anderson University__
-- Support Manager
+- __Software Research Center, Anderson University__ - Support Manager
 
 ## Education
 ### 2008-2010
