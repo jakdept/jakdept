@@ -65,20 +65,20 @@ title: Jack Hayhurst Curriculum Vitae
 ### Programming Languages
 - ⭐️️⭐️️️⭐⭐️️ Go / Bash
 - ⭐️⭐️⭐️ Python / PHP / Perl
-- ️⭐⭐️ C / C++
+- ⭐⭐️ C / C++
 - ⭐️ Rust / Ruby
 
 ### DevOps Management Systems
-- ️⭐️️️⭐⭐️️ Kubernetes / Rancher / Helm / Flux
-- ️⭐️⭐️️️⭐⭐️️ Ansible
+- ⭐️️️⭐⭐️️ Kubernetes / Rancher / Helm / Flux
+- ️⭐⭐️️️⭐⭐️️ Ansible
 - ️⭐️⭐️️ Puppet
 - ⭐️️️️ Salt
 
 ### Systems Knowledge
 - ⭐⭐️⭐️️️⭐⭐️️ Prometheus
 - ⭐️⭐️️ ElasticSearch / CockroachDB
-- ️⭐️️️⭐⭐️️ Ceph
-- ️⭐⭐️️ RabbitMQ / PowerDNS
+- ⭐️️️⭐⭐️️ Ceph
+- ⭐⭐️️ RabbitMQ / PowerDNS
 - ⭐️️️️⭐⭐️️ Cassandra
 - ⭐️️️️⭐⭐⭐️️️ Postgres / MySQL / MSSQL
 - ⭐️️️️⭐⭐⭐️️️ Nginx / Apache / HAProxy
