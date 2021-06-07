@@ -70,8 +70,8 @@ title: Jack Hayhurst Curriculum Vitae
 
 ### DevOps Management Systems
 - ⭐️️️⭐⭐️️ Kubernetes / Rancher / Helm / Flux
-- ️⭐⭐️️️⭐⭐️️ Ansible
-- ️⭐️⭐️️ Puppet
+- ⭐⭐️️️⭐⭐️️ Ansible
+- ⭐️⭐️️ Puppet
 - ⭐️️️️ Salt
 
 ### Systems Knowledge
