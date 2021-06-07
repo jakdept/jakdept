@@ -40,10 +40,12 @@ title: Jack Hayhurst Curriculum Vitae
 - Custom MySQL tooling
 
 ### 2011-01 - 2011-06
-- __Liquid Web Inc__ - System Administrator
+- __Liquid Web Inc__
+- System Administrator
 
 ### 2008-05 - 2010-06
-- __Software Research Center, Anderson University__ - Support Manager
+- __Software Research Center, Anderson University__
+- Support Manager
 
 ## Education
 
