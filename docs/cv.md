@@ -65,13 +65,15 @@ title: Jack Hayhurst Curriculum Vitae
 - Key: 1 star beginner, 5 stars expert
 
 ### Programming Languages
-- ⭐️️⭐️️️⭐⭐️️ Go / Bash
-- ⭐️⭐️⭐️ Python / PHP / Perl
+- ⭐⭐️️⭐️️️⭐⭐️️ Go / Bash
+- ⭐⭐️⭐️⭐️ Python
+- ⭐⭐️⭐️⭐️ PHP / Perl
+- ⭐⭐⭐️ Javascript
 - ⭐⭐️ C / C++
 - ⭐️ Rust / Ruby
 
 ### DevOps Management Systems
-- ⭐️️️⭐⭐️️ Kubernetes / Rancher / Helm / Flux
+- ⭐⭐️️️⭐⭐️️ Kubernetes / Rancher / Helm / Flux
 - ⭐⭐️️️⭐⭐️️ Ansible
 - ⭐️⭐️️ Puppet
 - ⭐️️️️ Salt
@@ -80,7 +82,8 @@ title: Jack Hayhurst Curriculum Vitae
 - ⭐⭐️⭐️️️⭐⭐️️ Prometheus
 - ⭐️⭐️️ ElasticSearch / CockroachDB
 - ⭐️️️⭐⭐️️ Ceph
-- ⭐⭐️️ RabbitMQ / PowerDNS
+- ⭐⭐⭐️️ RabbitMQ
+- ⭐⭐️️ PowerDNS
 - ⭐️️️️⭐⭐️️ Cassandra
 - ⭐️️️️⭐⭐⭐️️️ Postgres / MySQL / MSSQL
 - ⭐️️️️⭐⭐⭐️️️ Nginx / Apache / HAProxy

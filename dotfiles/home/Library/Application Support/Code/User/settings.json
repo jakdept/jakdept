@@ -205,7 +205,7 @@
 	"gitlens.hovers.enabled": false,
 	"gitlens.views.fileHistory.avatars": false,
 	"yaml.schemas": {
-		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-2.8.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-2.9.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
 	},
 	"editor.fontFamily": "Hack Nerd Font Mono, Hack, Menlo, Monaco, 'Courier New', monospace",
 	"gitlens.views.commits.showBranchComparison": false,
