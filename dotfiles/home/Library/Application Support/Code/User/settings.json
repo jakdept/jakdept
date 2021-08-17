@@ -115,7 +115,6 @@
 	"python.pythonPath": "python3",
 	"material-icon-theme.showUpdateMessage": false,
 	"extensions.ignoreRecommendations": false,
-	"window.newWindowDimensions": "offset",
 	"zenMode.hideActivityBar": false,
 	"zenMode.hideLineNumbers": false,
 	"zenMode.hideStatusBar": false,
@@ -123,7 +122,6 @@
 	"terminal.integrated.rendererType": "dom",
 	"liveshare.featureSet": "insiders",
 	"problems.showCurrentInStatus": true,
-	"workbench.startupEditor": "newUntitledFile",
 	"editor.renameOnType": false,
 	"git.autoStash": true,
 	"git.inputValidationLength": 80,
@@ -205,7 +203,7 @@
 	"gitlens.hovers.enabled": false,
 	"gitlens.views.fileHistory.avatars": false,
 	"yaml.schemas": {
-		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-2.9.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-2.9.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
 	},
 	"editor.fontFamily": "Hack Nerd Font Mono, Hack, Menlo, Monaco, 'Courier New', monospace",
 	"gitlens.views.commits.showBranchComparison": false,
@@ -268,12 +266,9 @@
 		"editor.defaultFormatter": "HookyQR.beautify"
 	},
 	"terminal.integrated.tabs.enabled": true,
-	"workbench.editorAssociations": [
-		{
-			"viewType": "jupyter.notebook.ipynb",
-			"filenamePattern": "*.ipynb"
-		}
-	],
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter-notebook"
+	},
 	"explorer.autoReveal": false,
 	"shellcheck.exclude": [
 		"2006"
@@ -281,4 +276,38 @@
 	// side by side editor, inline is too small
 	"diffEditor.renderSideBySide": false,
 	"redhat.telemetry.enabled": false,
+	"editor.cursorStyle": "line",
+	"editor.insertSpaces": false,
+	"editor.lineNumbers": "on",
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"window.newWindowDimensions": "offset",
+	"editor.renderIndentGuides": false,
+	"editor.highlightActiveIndentGuide": false,
+	"workbench.colorCustomizations": {
+		"editor.lineHighlightBackground": "#1073cf2d",
+		"editor.lineHighlightBorder": "#9fced11f"
+	},
+	"diffEditor.wordWrap": "off",
+	"[markdown]": {
+		"editor.wordWrap": "off",
+		"editor.quickSuggestions": false
+	},
+	"editor.matchBrackets": "near",
+	"editor.inlineSuggest.enabled": true,
+	"github.copilot.enable": {
+		"*": true,
+		"yaml": false,
+		"plaintext": true,
+		"markdown": false
+	},
+	"workbench.sideBar.location": "right",
+	"terminal.explorerKind": "external",
+	"terminal.integrated.defaultLocation": "editor",
+	"editor.scrollbar.verticalScrollbarSize": 4,
+	"editor.scrollbar.horizontalScrollbarSize": 4,
+	"python.defaultInterpreterPath": "python3",
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	},
 }
