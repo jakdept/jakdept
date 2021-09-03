@@ -49,6 +49,7 @@ Or you can add a cwd to the last selected VSCode window with `code --add .`
 ## Keyboard Shortcuts
 
 Keyboard shortcuts are kindof a big point.
+[I do have some modifications](https://raw.githubusercontent.com/jakdept/jakdept/main/dotfiles/home/Library/Application%20Support/Code/User/keybindings.json).
 
 * `⌘` + `p` - open a file with fuzzy searching
 * `⌘` + `shift` + `p` - start typing a vscode command
@@ -81,6 +82,8 @@ Keyboard shortcuts are kindof a big point.
 I have _heavily_ modified VSCode over time.
 I like my configuration.
 It does have some warts though, I could clean it up.
+
+[My live settings file is decently well documented](https://raw.githubusercontent.com/jakdept/jakdept/main/dotfiles/home/Library/Application%20Support/Code/User/settings.json).
 
 ## Extensions
 
