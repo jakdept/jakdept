@@ -54,6 +54,8 @@ Keyboard shortcuts are kindof a big point.
 * `⌘` + `shift` + `p` - start typing a vscode command
 * `⌘` + `ctrl` + `f` - switch to full screen (or zen mode, idk, i use it only on laptop anyway)
 * `⌘` + `,` - Open settings
+* `⌘` + `w` - Close current tab
+* `⌘` + `shift` + `w` - Close current tab and window
 
 ### Panels
 
@@ -68,12 +70,17 @@ Keyboard shortcuts are kindof a big point.
 
 * `⌘` + `g` - git push origin
 * `⌘` + `f` - search for stuff in your current file (can also replace)
-* `⌘` + `o` - fuzzy symbol search (language specific, 100x better than find)
+* `⌘` + `shift` + `o` - fuzzy symbol search (language specific, 100x better than find)
 * `⌘` + `d` - highlight next occurrence of the highlighted string (you could then c to change them all)
 * `⌘` + `shift` + `d` - this one's debug, it should be highlight of all of the previous one but i should fix that sometime
 * `⌘` + `r` - rename symbol (language specific, 100x better than replace)
-
 * `⌘` + `alt` + `f` - format your current file (this also happens on save with most file times, but some extensions are dumb)
+
+## Preferences
+
+I have _heavily_ modified VSCode over time.
+I like my configuration.
+It does have some warts though, I could clean it up.
 
 ## Extensions
 
@@ -120,6 +127,7 @@ I am hooked on vim.
 VSCode does not natively support vim keybindings.
 I do miss that from Sublime.
 But this extension almost makes up the gap perfectly.
+Except your editor now needs half a second to load.
 
 ```bash
 code --install-extension vscodevim.vim

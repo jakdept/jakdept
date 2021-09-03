@@ -1,65 +1,128 @@
 // Place your settings in this file to overwrite the default settings
 {
-	// editor view preferences
-	"workbench.colorTheme": "WarpOS",
-	"terminal.integrated.fontFamily": "Hack, Menlo, Monaco, Consolas, \"Droid Sans Mono\", \"Courier New\", monospace, \"Droid Sans Fallback\"",
-	"editor.renderWhitespace": "boundary",
-	"window.menuBarVisibility": "toggle", // hide menu bar - linux only
-	"editor.minimap.enabled": false, // minimap on right - nice but not very useful
-	"editor.fontLigatures": true,
-	"editor.tabSize": 2, // each tab is 2 spaces
 	//
-	// editor behavior
-	"editor.formatOnSave": false, // format on every save
-	"workbench.activityBar.visible": true, // show the bar on the left
-	"search.useIgnoreFiles": false, // make search faster
-	"files.autoSave": "onFocusChange", // autosave when switching apps
-	"editor.parameterHints.enabled": false, // use json editor instead of gui
+	//
+	// editor window settings
+	"window.restoreWindows": "none", // open empty new window
+	"window.newWindowDimensions": "offset",
+	"window.nativeTabs": true,
+	"window.menuBarVisibility": "toggle", // hide menu bar - linux only
+	"keyboard.touchbar.enabled": false, // disable macos touchbar
+	"workbench.sideBar.location": "right",
+	"workbench.colorTheme": "WarpOS", // theme
+	"workbench.preferredDarkColorTheme": "WarpOS", // theme for os dark mode
+	"workbench.editor.untitled.labelFormat": "name", // name of tab
+	"workbench.editor.labelFormat": "short", // name of tab
+	"problems.showCurrentInStatus": true,
+	"workbench.activityBar.visible": true, // show the icons for panes
+	"search.useIgnoreFiles": false, // use json editor instead of gui
 	"workbench.statusBar.visible": true, // bottom blue bar
-	"window.restoreWindows": "none", // medium file paths
 	"explorer.confirmDragAndDrop": false, // do not prompt on drag and drop
 	"workbench.panel.defaultLocation": "right", // put cli panel on the right
 	"search.quickOpen.includeHistory": false, // do not show recently opened files
+	"explorer.autoReveal": false, // do not move explorer to the active file
 	//
+	//
+	// full screen mode settings
+	"zenMode.hideActivityBar": false,
+	"zenMode.hideLineNumbers": false,
+	"zenMode.hideStatusBar": false,
+	"zenMode.hideTabs": false,
+	//
+	//
+	// editor code window settings
+	"editor.tabSize": 2, // each tab is 2 spaces
+	"diffEditor.renderSideBySide": false, // inline diff editor
+	"diffEditor.ignoreTrimWhitespace": false, // show me whitespace changes as well
+	"editor.cursorStyle": "line",
+	"editor.renderWhitespace": "boundary", // show whitespace not surrounded by text
+	"editor.fontFamily": "Hack Nerd Font Mono, Hack, Menlo, Monaco, 'Courier New', monospace", // editor font
+	"editor.lineNumbers": "on",
+	"editor.scrollbar.verticalScrollbarSize": 4,
+	"editor.scrollbar.horizontalScrollbarSize": 4,
+	"editor.insertSpaces": false,
+	"editor.renderIndentGuides": false,
+	"editor.highlightActiveIndentGuide": false,
+	"editor.minimap.enabled": false, // minimap on right - nice but not very useful
+	"editor.fontLigatures": true, // ligatures
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"editor.matchBrackets": "near",
+	"editor.linkedEditing": true, // when renaming HTML tag, rename the other?
+	"editor.formatOnSave": false, // do not format on every save
+	"files.autoSave": "onFocusChange", // autosave when switching apps
 	// word wrap settings
 	"editor.wordWrap": "on", // wrap at either tab  or below
 	"editor.wordWrapColumn": 160, // wrap at 160 chars
 	"editor.wrappingIndent": "indent", // indent once when wrapping
-	"editor.rulers": [
-		80 // draw a line at 80 characters
-	],
+	"editor.rulers": [80 ],// draw a line at 80 characters
 	//
-	// disable some preview behavior
+	//
+	// code window popups / annoying behavior
+	"references.preferredLocation": "view",
+	"editor.suggest.showReferences": false,
+	"editor.inlineSuggest.enabled": true,
 	"workbench.editor.enablePreview": false, // disable annoying half-open
 	"workbench.editor.enablePreviewFromQuickOpen": false, // disable half-open
-	"markdown.preview.doubleClickToSwitchToEditor": false,
+	"markdown.preview.doubleClickToSwitchToEditor": false, // do not move my cursor when I click on markdown preview
+	//
+	//
+	// terminal settings
+	"terminal.integrated.defaultLocation": "editor",
+	"terminal.integrated.fontFamily": "Hack, Menlo, Monaco, Consolas, \"Droid Sans Mono\", \"Courier New\", monospace, \"Droid Sans Fallback\"", // terminal font
+	"terminal.integrated.tabs.enabled": true,
+	"terminal.explorerKind": "external", // launch native terminal
+	//
+	//
+	//
 	//
 	// git settings
 	"git.autofetch": false,
+	"git.enableSmartCommit": true, // commit all changes if nothing is staged
+	"git.enableCommitSigning": false, // only works if you have a GPG key set up
+	"git.autoStash": true, // stash changes before checking out another branch
+	"git.inputValidationLength": 320, // limit the length of the commit message
+	"git.inputValidationSubjectLength": 80,
+	"git.confirmSync": false,
 	"gitlab.instanceUrl": "https://git.liquidweb.com",
 	"gitlab.enableExperimentalFeatures": true,
 	"gitlab.showPipelineUpdateNotifications": false,
-	"git.enableSmartCommit": true,
-	"git.enableCommitSigning": false, // only works if you have a GPG key set up
-	"gitlens.keymap": "none", // do inline diff
 	//
 	//
-	// some editor defaults
+	// specific filetype settings
+	"files.associations": {
+		"*.yaml": "yaml",
+		"*.plist": "xml",
+		"*.spec": "RPMSpec"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "HookyQR.beautify"
+	},
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
 	"[dockerfile]": {
 		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
 	},
-	"files.associations": {
-		"*.yaml": "yaml",
-		"*.plist": "xml",
-		"*.spec": "RPMSpec"
+	//
+	//
+	// random extension settings
+	"vs-kubernetes": {
+		"vscode-kubernetes.minikube-path.mac": "/Users/jack/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
 	},
+	"docker.showStartPage": false,
+	"redhat.telemetry.enabled": false, // disable telemetry
+	"diffEditor.wordWrap": "off",
+	"github.copilot.enable": {
+		"*": true,
+		"yaml": true,
+		"plaintext": true,
+		"markdown": true
+	},
+	//
 	//
 	// vim settings
 	"vim.foldfix": true, // move properly through folds
-	"vim.handleKeys": {
+	"vim.handleKeys": { // keys for vim extension to ignore
 		"<C-d>": false,
 		"<C-s>": false,
 		"<C-f>": false,
@@ -71,10 +134,30 @@
 		"<C-S-g>": false,
 		"<C-E>": false
 	},
-	"go.formatTool": "goreturns",
+	//
+	//
+	// markdown settings
+	"[markdown]": {
+		"editor.wordWrap": "off",
+	},
+	"markdownlint.ignore": [
+		"MD004/ul-style - Unordered list style"
+	],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.markdownlint": true
+	},
+	//
+	// go language settings
+	"go.formatTool": "gofumports",
+	"go.toolsManagement.autoUpdate": true,
+	"go.coverMode": "atomic",
 	"go.buildOnSave": "package",
-	// Run Lint tool on save.
 	"go.lintOnSave": "package",
+	"go.vetOnSave": "package",
+	"go.coverOnSave": true,
+	"go.toolsEnvVars": {
+		"CGO_ENABLED": 1, // enable cgo because macos
+	},
 	// Specifies Lint tool name.
 	// "go.lintTool": "golangci-lint",
 	// https://github.com/alecthomas/gometalinter#supported-linters
@@ -101,32 +184,52 @@
 		"--enable=unparam",
 		"--enable=gocritic",
 		"--enable=noctx",
-		// "--enable=paralleltest",
+		"--enable=paralleltest",
 		"--enable=unconvert",
 		"--enable=sqlclosecheck",
 		"--enable=gomnd",
 	],
-	"go.vetOnSave": "package",
-	"go.coverOnSave": true,
-	"go.toolsEnvVars": {
-		"CGO_ENABLED": 1,
-	},
-	// "go.useLanguageServer": true,
+	//
+	// python language settings
 	"python.pythonPath": "python3",
-	"material-icon-theme.showUpdateMessage": false,
-	"extensions.ignoreRecommendations": false,
-	"zenMode.hideActivityBar": false,
-	"zenMode.hideLineNumbers": false,
-	"zenMode.hideStatusBar": false,
-	"zenMode.hideTabs": false,
-	"terminal.integrated.rendererType": "dom",
-	"liveshare.featureSet": "insiders",
-	"problems.showCurrentInStatus": true,
-	"editor.renameOnType": false,
-	"git.autoStash": true,
-	"git.inputValidationLength": 80,
-	"git.inputValidationSubjectLength": 80,
+	"python.defaultInterpreterPath": "python3",
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	},
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter-notebook"
+	},
+	//
+	//
 	"shellformat.flag": "-ln bash",
+	"shellcheck.exclude": [
+		"2006"
+	],
+	//
+	//
+	// TODO extension settings
+	"todo-tree.general.tags": [
+		"BUG",
+		"HACK",
+		"FIXME",
+		"TODO",
+		"XXX",
+		"[ ]",
+		"[x]"
+	],
+	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+	//
+	//
+	// jira stuff
+	"atlascode.jira.explorer.monitorEnabled": true,
+	"atlascode.jira.statusbar.enabled": true,
+	"atlascode.jira.statusbar.showProduct": true,
+	"atlascode.bitbucket.enabled": false,
+	"atlascode.jira.todoIssues.triggers": [
+		"BUG:",
+		"FIXME:"
+	],
 	"atlascode.jira.jqlList": [
 		{
 			"enabled": true,
@@ -161,159 +264,4 @@
 			"siteId": "f887abaf-ee6c-4820-9ee8-06ccf8456c7a"
 		}
 	],
-	"diffEditor.ignoreTrimWhitespace": false,
-	"atlascode.jira.statusbar.enabled": true,
-	"atlascode.jira.statusbar.showProduct": true,
-	"atlascode.bitbucket.enabled": false,
-	"git.confirmSync": false,
-	"keyboard.touchbar.enabled": false,
-	"go.coverMode": "atomic",
-	"atlascode.jira.todoIssues.triggers": [
-		"BUG:",
-		"FIXME:"
-	],
-	"editor.suggest.showReferences": false,
-	"references.preferredLocation": "view",
-	"python.showStartPage": false,
-	"atlascode.jira.explorer.monitorEnabled": true,
-	"gitlens.currentLine.pullRequests.enabled": false,
-	"gitlens.hovers.pullRequests.enabled": false,
-	"gitlens.views.branches.pullRequests.enabled": false,
-	"gitlens.views.branches.pullRequests.showForBranches": false,
-	"gitlens.views.branches.pullRequests.showForCommits": false,
-	"gitlens.views.commits.pullRequests.enabled": false,
-	"gitlens.views.commits.pullRequests.showForBranches": false,
-	"gitlens.views.commits.pullRequests.showForCommits": false,
-	"gitlens.views.contributors.pullRequests.enabled": false,
-	"gitlens.views.contributors.pullRequests.showForCommits": false,
-	"gitlens.views.remotes.pullRequests.showForCommits": false,
-	"gitlens.views.remotes.pullRequests.enabled": false,
-	"gitlens.views.remotes.pullRequests.showForBranches": false,
-	"gitlens.views.repositories.pullRequests.enabled": false,
-	"gitlens.views.repositories.pullRequests.showForCommits": false,
-	"gitlens.views.repositories.pullRequests.showForBranches": false,
-	"gitlens.views.searchAndCompare.pullRequests.enabled": false,
-	"gitlens.views.searchAndCompare.pullRequests.showForCommits": false,
-	"gitlens.hovers.autolinks.enhanced": false,
-	"todohighlight.isEnable": true,
-	"todo-tree.tree.showScanModeButton": false,
-	"gitlens.hovers.currentLine.over": "line",
-	"gitlens.statusBar.pullRequests.enabled": false,
-	"gitlens.hovers.avatars": false,
-	"gitlens.hovers.enabled": false,
-	"gitlens.views.fileHistory.avatars": false,
-	"yaml.schemas": {
-		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-2.9.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-	},
-	"editor.fontFamily": "Hack Nerd Font Mono, Hack, Menlo, Monaco, 'Courier New', monospace",
-	"gitlens.views.commits.showBranchComparison": false,
-	"gitlens.views.commits.files.compact": false,
-	"gitlens.views.commits.avatars": false,
-	"gitlens.heatmap.locations": [
-		"gutter",
-		"overview"
-	],
-	"gitlens.defaultDateStyle": "absolute",
-	"gitlens.defaultDateFormat": "YYYY-MM-DDTHH:MM:00ZZ",
-	"gitlens.defaultDateShortFormat": null,
-	"gitlens.defaultTimeFormat": "HH:mm",
-	"gitlens.mode.statusBar.enabled": false,
-	"gitlens.menus": {
-		"editor": false,
-		"editorGroup": false,
-		"editorTab": false,
-		"explorer": false,
-		"scm": false,
-		"scmGroupInline": false,
-		"scmGroup": false,
-		"scmItem": false
-	},
-	"gitlens.blame.avatars": false,
-	"gitlens.views.searchAndCompare.avatars": false,
-	"gitlens.views.contributors.avatars": false,
-	"gitlens.views.tags.avatars": false,
-	"gitlens.views.remotes.avatars": false,
-	"gitlens.views.branches.avatars": false,
-	"gitlens.currentLine.scrollable": false,
-	"gitlens.codeLens.recentChange.command": false,
-	"gitlens.codeLens.recentChange.enabled": false,
-	"gitlens.codeLens.authors.command": false,
-	"gitlens.codeLens.authors.enabled": false,
-	"gitlens.codeLens.scopes": [],
-	"gitlens.views.repositories.avatars": false,
-	"gitlens.views.lineHistory.avatars": false,
-	"gitlens.codeLens.enabled": false,
-	"go.toolsManagement.autoUpdate": true,
-	"todo-tree.general.tags": [
-		"BUG",
-		"HACK",
-		"FIXME",
-		"TODO",
-		"XXX",
-		"[ ]",
-		"[x]"
-	],
-	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-	"workbench.editor.untitled.labelFormat": "name",
-	"workbench.editor.labelFormat": "short",
-	"vs-kubernetes": {
-		"vscode-kubernetes.minikube-path.mac": "/Users/jack/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-	},
-	"docker.showStartPage": false,
-	"workbench.preferredDarkColorTheme": "WarpOS",
-	"window.nativeTabs": true,
-	"[html]": {
-		"editor.defaultFormatter": "HookyQR.beautify"
-	},
-	"terminal.integrated.tabs.enabled": true,
-	"workbench.editorAssociations": {
-		"*.ipynb": "jupyter-notebook"
-	},
-	"explorer.autoReveal": false,
-	"shellcheck.exclude": [
-		"2006"
-	],
-	// side by side editor, inline is too small
-	"diffEditor.renderSideBySide": false,
-	"redhat.telemetry.enabled": false,
-	"editor.cursorStyle": "line",
-	"editor.insertSpaces": false,
-	"editor.lineNumbers": "on",
-	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-	"window.newWindowDimensions": "offset",
-	"editor.renderIndentGuides": false,
-	"editor.highlightActiveIndentGuide": false,
-	"workbench.colorCustomizations": {
-		"editor.lineHighlightBackground": "#1073cf2d",
-		"editor.lineHighlightBorder": "#9fced11f"
-	},
-	"diffEditor.wordWrap": "off",
-	"[markdown]": {
-		"editor.wordWrap": "off",
-		"editor.quickSuggestions": false
-	},
-	"editor.matchBrackets": "near",
-	"editor.inlineSuggest.enabled": true,
-	"github.copilot.enable": {
-		"*": true,
-		"yaml": false,
-		"plaintext": true,
-		"markdown": false
-	},
-	"workbench.sideBar.location": "right",
-	"terminal.explorerKind": "external",
-	"terminal.integrated.defaultLocation": "editor",
-	"editor.scrollbar.verticalScrollbarSize": 4,
-	"editor.scrollbar.horizontalScrollbarSize": 4,
-	"python.defaultInterpreterPath": "python3",
-	"notebook.cellToolbarLocation": {
-		"default": "right",
-		"jupyter-notebook": "left"
-	},
-	"markdownlint.ignore": [
-		"MD004/ul-style - Unordered list style"
-	],
-	"editor.codeActionsOnSave": {
-		"source.fixAll.markdownlint": true
-	}
 }
