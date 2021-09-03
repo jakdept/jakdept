@@ -6,6 +6,3 @@ export GIT_WORK_TREE="$HOME/src/github.com/jakdept/jakdept"
 code --list-extensions > ~/src/github.com/jakdept/jakdept/dotfiles/vscode-install.list
 brew leaves > ~/src/github.com/jakdept/jakdept/dotfiles/brew-install.list
 
-git add -A
-git commit -vsa && git push
-

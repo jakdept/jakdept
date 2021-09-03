@@ -16,7 +16,7 @@ But meh I've moved away from windows because update managers should be a thing.
 So use one of the below commands!
 
 ```bash
-brew install vscode
+brew install visual-studio-code
 ```
 
 ```bash
