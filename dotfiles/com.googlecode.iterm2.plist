@@ -739,12 +739,16 @@
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<string>0.8117647</string>
+				<real>0.82248353958129883</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<string>0.6235294</string>
+				<real>0.71232736511689143</real>
 				<key>Red Component</key>
-				<string>0.4470588</string>
+				<real>0.59362104080241807</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
@@ -793,12 +797,16 @@
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<string>0.6431373</string>
+				<real>0.81080389022827148</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<string>0.3960784</string>
+				<real>0.60698759761112309</real>
 				<key>Red Component</key>
-				<string>0.2039216</string>
+				<real>0.40694166493074135</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -1357,7 +1365,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.29999999999999999</real>
+			<real>0.12413196367086819</real>
 			<key>Unlimited Scrollback</key>
 			<true/>
 			<key>Use Bold Font</key>

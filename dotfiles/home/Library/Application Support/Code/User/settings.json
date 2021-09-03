@@ -310,4 +310,10 @@
 		"default": "right",
 		"jupyter-notebook": "left"
 	},
+	"markdownlint.ignore": [
+		"MD004/ul-style - Unordered list style"
+	],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.markdownlint": true
+	}
 }
