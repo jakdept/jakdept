@@ -7,23 +7,26 @@ These are my dotfiles.
 I've used them to set up Linux and macOS systems in the past.
 Most recently I've used macOS, but everything should work.
 
-
 Install Brew:
+
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" 
 ```
 
 Install git:
-```
+
+```bash
 brew install git
 ```
 
 To clone:
+
 ```bash
 git clone https://github.com/jakdept/jakdept.git ~/src/github.com/jakdept/jakdept
 ```
 
 Install initial configs:
+
 ```bash
 mkdir -p ~/.config/fish/functions ~/.config/fish/conf.d ~/bin ~/.ssh ~/Library ~/Library/Application\ Support/Code/User/
 ln ~/src/github.com/jakdept/jakdept/dotfiles/home/.config/fish/functions/fish_prompt.fish ~/.config/fish/functions/
@@ -34,6 +37,7 @@ Install items from brew (will take a while):
 
 ```bash
 cat ~/src/github.com/jakdept/jakdept/dotfiles/brew-install.list | xargs brew install
+cat ~/src/github.com/jakdept/jakdept/dotfiles/brew-cask.list | xargs brew install --cask
 ```
 
 Switch to fish:
@@ -44,6 +48,7 @@ chsh -s /usr/local/bin/fish
 ```
 
 You should now have iterm. Open it and:
+
 * Change the font to hack
 * Set the default directory to ~/Downloads/
 * Set window transparency
@@ -81,19 +86,22 @@ git config --global core.excludesfile = /Users/jhayhurst/.gitignore_global
 ### Setup VSCode
 
 Install config files:
+
 ```bash
 ls ~/src/github.com/jakdept/jakdept/dotfiles/home/Library/Application\ Support/Code/User/ | xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/Library/Application\ Support/Code/User/{} ~/Library/Application\ Support/Code/User/
 ```
 
 Open vscode and run `Shell Command: Install 'code' command in PATH`
 
-```
+```bash
+cat dotfiles/vscode-install.list | xargs -L1 code --install-extension
 cat dotfiles/vscode-install.list | xargs -L1 code --install-extension
 ```
 
 ### Add macOS App Store Packages
 
 Sign into the app store, then:
+
 ```
 awk '{print $1}' ~/src/github.com/jakdept/jakdept/dotfiles/mas-install.list | xargs -L1 mas install
 ```
@@ -101,6 +109,7 @@ awk '{print $1}' ~/src/github.com/jakdept/jakdept/dotfiles/mas-install.list | xa
 ### Add go
 
 Install latest go:
+
 ```bash
 update-go
 ```
@@ -141,17 +150,20 @@ sudo launchctl load /Library/LaunchDaemons/sh.brew.clamav.clamd.plist
 ```
 
 ### Setup SSH key / GPG
+
 ```bash
 ls ~/src/github.com/jakdept/jakdept/dotfiles/home/.gnupg|xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/.gnupg/{} ~/.gnupg/
 ls ~/src/github.com/jakdept/jakdept/dotfiles/home/.ssh|xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/.ssh/{} ~/.ssh
 ```
 
 Trust your own GPG keys:
+
 ```bash
 gpg --import (curl https://github.com/jakdept.gpg|sub)
 ```
 
 That should output something like:
+
 ```bash
 gpg: key 0xC31FCA1B173F01B5: public key "Jack Hayhurst <jakdept@gmail.com>" imported
 gpg: key 0x91BB20A6F956A176: public key "Jack Hayhurst <jhayhurst@liquidweb.com>" imported
@@ -160,11 +172,13 @@ gpg:               imported: 2
 ```
 
 Then for each:
+
 * `gpg --edit-key <key id> trust`
 * `5`
 * `y`
 
 ### Add in binaries
+
 ```bash
 ls ~/src/github.com/jakdept/jakdept/dotfiles/home/bin | xargs -I{} ln ~/src/github.com/jakdept/jakdept/dotfiles/home/bin/{} ~/bin/
 ```
@@ -220,7 +234,7 @@ killall ControlStrip
 
 ### More repos to clone
 
-```
+```text
 git@gitlab.com:openconnect/openconnect.git
 https://github.com/apache/httpd.git
 git@github.com:php/php-src.git
@@ -232,23 +246,15 @@ https://git.centos.org/rpms/centos-release.git
 ```
 
 ## Update settings
-Keep this up to date.
 
-Update VSCode extensions:
-```bash
-code --list-extensions > dotfiles/vscode-install.list
-```
-
-Update Brew stuff:
-```bash
-brew list > dotfiles/brew-install.list
-```
+Run `update-dotfiles`.
 
 ## Secondary System
 
 Let's be real - install fish cause it's nice, but also you just do everything in docker anyway.
 
 Go install docker. Then:
+
 ```bash
 sudo groupadd docker
 sudo usermod -aG docker $USER
