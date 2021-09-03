@@ -46,6 +46,21 @@ This lets you install extensions from CLI.
 THis also lets you open a cwd in shell in a VSCdoe window with `code .`.
 Or you can add a cwd to the last selected VSCode window with `code --add .`
 
+### VSCode Workspaces
+
+Over time, I have multiple code folders (multiple projects) that I open in the same window.
+Any window with multiple folders is a workspace.
+I have a folder in my personal repo that contains all of these workspaces.
+
+This allows me to easily jump back into a "system" area, such as:
+
+* My user docs
+* Puppet repos
+* Kubernetes repos
+* Customer Ansible Repos
+* Internal Ansible Repos
+* Distributed Packages (less useful)
+
 ## Keyboard Shortcuts
 
 Keyboard shortcuts are kindof a big point.
