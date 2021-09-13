@@ -4,5 +4,6 @@ export GIT_DIR="$HOME/src/github.com/jakdept/jakdept/.git"
 export GIT_WORK_TREE="$HOME/src/github.com/jakdept/jakdept"
 
 code --list-extensions > ~/src/github.com/jakdept/jakdept/dotfiles/vscode-install.list
-brew leaves > ~/src/github.com/jakdept/jakdept/dotfiles/brew-install.list
+brew leaves |sort > ~/src/github.com/jakdept/jakdept/dotfiles/brew-install.list
+brew list --cask | sort > ~/src/github.com/jakdept/jakdept/dotfiles/brew-cask.list
 
