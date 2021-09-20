@@ -132,7 +132,11 @@
 		"<W-v>": false,
 		"<C-S-e>": false,
 		"<C-S-g>": false,
-		"<C-E>": false
+		"<C-E>": false,
+		"<O-[>": false,
+		"<O-]>": false,
+		"<O-W-[>": false,
+		"<O-W-]>": false,
 	},
 	//
 	//
@@ -267,4 +271,5 @@
 	"yaml.schemas": {
 		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-2.9.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
 	},
+	"github.copilot.inlineSuggest.count": 5,
 }
