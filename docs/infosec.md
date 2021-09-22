@@ -47,8 +47,9 @@ function processInbox() {
       if (messages[messageID].getRawContent().indexOf("X-PHISH:") > -1 ) {
         Logger.log("found a spam: " + threads[threadID].getFirstMessageSubject())
         threads[threadID].addLabel(GmailApp.getUserLabelByName("x-phish"))
-        messages[messageID].forward("secteam@liquidweb.com",
-         {htmlBody: '<br><img src="https://deleteos.com/thumbs/star.trek.png"><br><hr><br>'})
+        // this could work, but it could be a bounce loop if they reply
+        // messages[messageID].forward("secteam@liquidweb.com",
+        //  {htmlBody: 'looks like another phish<br><hr><br>'})
         threads[threadID].markRead()
         threads[threadID].moveToSpam()
       }
