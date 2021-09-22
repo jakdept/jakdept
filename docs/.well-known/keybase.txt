@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jakdept
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jakdept.dev
+  * I am jakdept (https://keybase.io/jakdept) on keybase.
+  * I have a public key ASDXgPumOzZf3wk19wHcfAf5xcV1r8w0m8g_v1lv6Ng43go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d780fba63b365fdf0935f701dc7c07f9c5c575afcc349bc83fbf596fe8d838de0a",
+      "host": "keybase.io",
+      "kid": "0120d780fba63b365fdf0935f701dc7c07f9c5c575afcc349bc83fbf596fe8d838de0a",
+      "uid": "dde038991510f36b91f3021fb5f23e19",
+      "username": "jakdept"
+    },
+    "merkle_root": {
+      "ctime": 1632314075,
+      "hash": "08d0483f9deeec0e373fbf2dec7a5aeaddb33947e507dd3e701e8d87c78980f362cf641cff1ec7f27e834e3387667e9194ff39da2d77a7aa36b6b02a1a7a1e72",
+      "hash_meta": "ab819e5018677f733fea339e0cbdd018249e8170572a3a278e745dc9b06f9e14",
+      "seqno": 20817314
+    },
+    "service": {
+      "entropy": "qGryxdPspwlxlT7FCJ47v9eW",
+      "hostname": "jakdept.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.8.0"
+  },
+  "ctime": 1632314099,
+  "expire_in": 504576000,
+  "prev": "b4d92976a39d72b9f1dc7db34a620edbc4b97d938b2f3aa57cd87a612d87c65f",
+  "seqno": 29,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg14D7pjs2X98JNfcB3HwH+cXFda/MNJvIP79Zb+jYON4Kp3BheWxvYWTESpcCHcQgtNkpdqOdcrnx3H2zSmIO28S5fZOLLzqlfNh6YS2Hxl/EIBmfCjqgTwmf4ZfJrHJTLnrW4L8kPukH5jrycaOH6m13AgHCo3NpZ8RAzTVUlTVCVxjgFiuLKpwP0RiPXkBiF8+MIlDycAmgYTLGI6I3sOPGQ0UdsUWY966uPSrDDyCb5JTBui10YIluD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIGQBpeseG+I0PeRgZgWZznkht4Mv42YSXGnMr9pNeAvo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jakdept
+
+==================================================================
