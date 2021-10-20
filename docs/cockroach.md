@@ -117,3 +117,11 @@ On one node:
 ```bash
 cockroach init --certs-dir=certs --host=localhost:26257
 ```
+
+### Perl examples
+
+<https://github.com/cockroachdb/docs/issues/6697>
+
+<https://metacpan.org/pod/DBD::Pg>
+
+<https://www.cockroachlabs.com/docs/stable/install-client-drivers.html?filters=go#pgx>

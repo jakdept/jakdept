@@ -28,3 +28,7 @@ fi
 
 mkdir -p $(dirname  ${dirPath})
 git clone ${clonePath} ${dirPath}
+
+echo ""
+echo "to move to directory:"
+echo "cd ${dirPath}"

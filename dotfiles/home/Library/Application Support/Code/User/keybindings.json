@@ -79,5 +79,19 @@
   {
     "key": "cmd+k cmd+s",
     "command": "-workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "alt+cmd+f",
+    "command": "-liveshare.follow",
+    "when": "liveshare:hasCollaborators && !liveshare:isFollowing"
+  },
+  {
+    "key": "alt+cmd+f",
+    "command": "-liveshare.unfollow",
+    "when": "liveshare:hasCollaborators && liveshare:isFollowing"
+  },
+  {
+    "key": "ctrl+shift+cmd+f",
+    "command": "liveshare.focusParticipantsFromFileTreeExplorer"
   }
 ]
