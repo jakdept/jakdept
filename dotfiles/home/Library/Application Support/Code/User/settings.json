@@ -275,4 +275,5 @@
 	"json.maxItemsComputed": 500000,
 	"editor.guides.bracketPairs": true,
 	"workbench.editor.tabCloseButton": "off",
+	"git.showUnpublishedCommitsButton": "never",
 }
