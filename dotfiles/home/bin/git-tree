@@ -1,0 +1,3 @@
+#!/bin/bash
+
+tree -pugfiDI .git/ "$(realpath --relative-to="$(pwd)" "$(git rev-parse --show-toplevel)")"
