@@ -7,12 +7,13 @@ coolbear.systemd-unit-file
 CraigMaslowski.erb
 Cronos87.yaml-symbols
 DavidAnson.vscode-markdownlint
+dawhite.mustache
 dbaeumer.vscode-eslint
 dineug.vuerd-vscode
 dlech.chmod
+eamodio.gitlens
 EditorConfig.EditorConfig
 fabianlauer.vs-code-xml-format
-felixfbecker.php-intellisense
 foxundermoon.shell-format
 gerane.Theme-Brogrammer
 gerane.Theme-WarpOS
@@ -30,6 +31,7 @@ jetmartin.bats
 jq-syntax-highlighting.jq-syntax-highlighting
 korekontrol.saltstack
 luggage66.AWK
+mervin.markdown-formatter
 mhutchie.git-graph
 mikestead.dotenv
 ms-azuretools.vscode-docker
