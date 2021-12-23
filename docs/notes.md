@@ -1,5 +1,27 @@
 # My quotes file
 
+## System Design Process
+
+This list is ordered starting with greatest impact.
+
+- Remove requirements that are not needed, simplify the ones you have left, make everything concise and specific, make the requirements less dumb. Attach someone with a good prespective for that requirement to each requirement.
+- Delete every part you can. If you find you need it later, you can add it later. Do not engineer the whole system, some parts should be added while building; if they are not you have more parts than you need.
+- Simplify every part you can. Make it match the requirement as closely and simply as possible.
+- Speed up the end to end process. Make a prototype, then a second version, then a third - and speed up the process for making versions.
+- Automate everything. Build the system, not the products of the system.
+- Test things. Test the requirements, unit test where applicable, mock test against external interfaces, unit test complex parts.
+
+## Standard Testing Concepts
+
+I find the following test flags usually useful and often write them into my code.
+
+- `-cover` - show me which parts of my code are covered by tests.
+- `-benchmark` - run some benchmarks, measure performance gains or losses.
+- `-flame` - give me flame graphs. Show me where I'm spending my time in a given test.
+- `-debug` - run extra debug tests, possibly extra unit tests. When time is tight, these tests get skipped.
+- `-update` - often tests produce golden output (expected output that should always be the same), this flag updates that expected output.
+- `-live` - run tests against a live system. Often the live system is running alongside the tests in a second container, but mocking a system and running against the system produce different levels of accuracy.
+
 ## Slack Statuses
 
 Let's be honest, I mostly pull my slack statuses from these files.
