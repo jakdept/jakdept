@@ -266,9 +266,6 @@
 			"siteId": "f887abaf-ee6c-4820-9ee8-06ccf8456c7a"
 		}
 	],
-	"yaml.schemas": {
-		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-2.10.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-	},
 	"github.copilot.inlineSuggest.count": 5,
 	"json.maxItemsComputed": 500000,
 	"editor.guides.bracketPairs": true,

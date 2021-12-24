@@ -4,12 +4,12 @@
 
 This list is ordered starting with greatest impact.
 
-- Remove requirements that are not needed, simplify the ones you have left, make everything concise and specific, make the requirements less dumb. Attach someone with a good prespective for that requirement to each requirement.
-- Delete every part you can. If you find you need it later, you can add it later. Do not engineer the whole system, some parts should be added while building; if they are not you have more parts than you need.
+- Make the requirements less dumb. Attach someone with a good prespective for that requirement to each requirement. Understand each requirement.
+- Delete every part you can, and flag some as non-MVP for possible future deletion. Things can be added later, do not engineer the whole world.
 - Simplify every part you can. Make it match the requirement as closely and simply as possible.
-- Speed up the end to end process. Make a prototype, then a second version, then a third - and speed up the process for making versions.
-- Automate everything. Build the system, not the products of the system.
-- Test things. Test the requirements, unit test where applicable, mock test against external interfaces, unit test complex parts.
+- Accelerate. Get a prototype (simpler than MVP), then add something (second cycle), then continue to speed up that cycle time.
+- Automate. Build the system, not the products of the system.
+- Measure the results with testing, metrics, instrumentation, etc.
 
 ## Standard Testing Concepts
 
