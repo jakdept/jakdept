@@ -12,6 +12,9 @@ racoon)
 nancy)
 	url='https://www.youtube.com/watch?v=Cq0e1eDp_9k'
 	;;
+feen)
+	url='https://www.twitch.tv/thedragonfeeney'
+	;;
 esac
 
 
