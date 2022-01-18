@@ -74,7 +74,7 @@
 	//
 	//
 	// git settings
-	"git.autofetch": false,
+	"git.autofetch": true,
 	"git.enableSmartCommit": true, // commit all changes if nothing is staged
 	"git.enableCommitSigning": false, // only works if you have a GPG key set up
 	"git.autoStash": true, // stash changes before checking out another branch
@@ -351,5 +351,5 @@
 	"gitlens.liveshare.allowGuestAccess": false,
 	"gitlens.terminalLinks.enabled": false,
 	"gitlens.mode.statusBar.enabled": false,
-	"gitlens.advanced.quickPick.closeOnFocusOut": false,
+	"gitlens.advanced.quickPick.closeOnFocusOut": false
 }
