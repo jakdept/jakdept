@@ -31,12 +31,12 @@ while [ "$1" ]; do
 done
 
 function get_token() {
-URL="https://$CSD_HOSTNAME/+CSCOE+/sdesktop/token.xml?ticket=$TICKET&stub=$STUB"
-if [ -n "$XMLSTARLET" ]; then
-    TOKEN=$(curl $PINNEDPUBKEY -s "$URL"  | xmlstarlet sel -t -v /hostscan/token)
-else
-    TOKEN=$(curl $PINNEDPUBKEY -s "$URL" | sed -n '/<token>/s^.*<token>\(.*\)</token>^\1^p' )
-fi
+	URL="https://$CSD_HOSTNAME/+CSCOE+/sdesktop/token.xml?ticket=$TICKET&stub=$STUB"
+	if [ -n "$XMLSTARLET" ]; then
+		TOKEN=$(curl $PINNEDPUBKEY -s "$URL" | xmlstarlet sel -t -v /hostscan/token)
+	else
+		TOKEN=$(curl $PINNEDPUBKEY -s "$URL" | sed -n '/<token>/s^.*<token>\(.*\)</token>^\1^p')
+	fi
 }
 
 function send_response() {
@@ -72,44 +72,47 @@ function fake_anyconnect() {
 	cat <<EOF
 endpoint.application.clienttype="AnyConnect";
 endpoint.anyconnect.platform="mac-intel";
-EOF
-}
-
-function get_generic_data() {
-	cat <<EOF
-endpoint.os.version="$(uname -s)";
-endpoint.os.servicepack="$(uname -r)";
-endpoint.os.architecture="$(uname -m)";
 endpoint.policy.location="Default";
 endpoint.device.protection="none";
 endpoint.device.protection_version="3.1.03103";
-endpoint.device.hostname="$(hostname)";
-endpoint.device.port["9217"]="true";
-endpoint.device.port["139"]="true";
-endpoint.device.port["53"]="true";
-endpoint.device.port["22"]="true";
-endpoint.device.port["631"]="true";
-endpoint.device.port["445"]="true";
-endpoint.device.port["9216"]="true";
-endpoint.device.tcp4port["9217"]="true";
-endpoint.device.tcp4port["139"]="true";
-endpoint.device.tcp4port["53"]="true";
-endpoint.device.tcp4port["22"]="true";
-endpoint.device.tcp4port["631"]="true";
-endpoint.device.tcp4port["445"]="true";
-endpoint.device.tcp4port["9216"]="true";
-endpoint.device.tcp6port["139"]="true";
-endpoint.device.tcp6port["53"]="true";
-endpoint.device.tcp6port["22"]="true";
-endpoint.device.tcp6port["631"]="true";
-endpoint.device.tcp6port["445"]="true";
-endpoint.device.MAC["FFFF.FFFF.FFFF"]="true";
 endpoint.device.protection_extension="3.6.4900.2";
+EOF
+}
+
+function fake_firewall() {
+	cat <<EOF
 endpoint.fw["IPTablesFW"]={};
 endpoint.fw["IPTablesFW"].exists="true";
 endpoint.fw["IPTablesFW"].description="IPTables (Linux)";
 endpoint.fw["IPTablesFW"].version="1.6.1";
 endpoint.fw["IPTablesFW"].enabled="ok";
+EOF
+}
+
+function fake_ports() {
+	cat <<EOF
+endpoint.device.port["53"]="true";
+endpoint.device.port["22"]="true";
+endpoint.device.port["631"]="true";
+endpoint.device.port["445"]="true";
+endpoint.device.tcp4port["53"]="true";
+endpoint.device.tcp4port["22"]="true";
+endpoint.device.tcp4port["631"]="true";
+endpoint.device.tcp4port["445"]="true";
+endpoint.device.tcp6port["53"]="true";
+endpoint.device.tcp6port["22"]="true";
+endpoint.device.tcp6port["631"]="true";
+endpoint.device.tcp6port["445"]="true";
+EOF
+}
+
+function real_generic_data() {
+	cat <<EOF
+endpoint.os.version="$(uname -s)";
+endpoint.os.servicepack="$(uname -r)";
+endpoint.os.architecture="$(uname -m)";
+endpoint.device.hostname="$(hostname)";
+endpoint.device.MAC["FFFF.FFFF.FFFF"]="true";
 EOF
 }
 
@@ -180,7 +183,8 @@ EOF
 get_token
 
 (
-	get_generic_data
+	real_generic_data
 	fake_anyconnect
+	fake_firewall
 	fake_clamav
 ) | tee /dev/stderr | send_response
