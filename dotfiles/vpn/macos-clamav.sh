@@ -68,7 +68,7 @@ endpoint.process.clamav.exists="true";
 EOF
 }
 
-function fake_anyconnect() {
+function fake_anyconnect_macos_intel() {
 	cat <<EOF
 endpoint.application.clienttype="AnyConnect";
 endpoint.anyconnect.platform="mac-intel";
@@ -76,6 +76,38 @@ endpoint.policy.location="Default";
 endpoint.device.protection="none";
 endpoint.device.protection_version="3.1.03103";
 endpoint.device.protection_extension="3.6.4900.2";
+EOF
+}
+
+function fake_generic_linux() {
+	cat <<EOF
+endpoint.application.clienttype="AnyConnect";
+endpoint.anyconnect.platform="linux";
+endpoint.policy.location="Default";
+endpoint.device.protection="none";
+endpoint.device.protection_version="3.1.03103";
+endpoint.device.protection_extension="3.6.4900.2";
+endpoint.os.version="Linux";
+endpoint.os.servicepack="5.4.0-96-generic";
+endpoint.os.architecture="x86_64";
+endpoint.device.hostname="$(hostname)";
+endpoint.device.MAC["FFFF.FFFF.FFFF"]="true";
+EOF
+}
+
+function fake_generic_macos() {
+	cat <<EOF
+endpoint.application.clienttype="AnyConnect";
+endpoint.anyconnect.platform="mac-intel";
+endpoint.policy.location="Default";
+endpoint.device.protection="none";
+endpoint.device.protection_version="3.1.03103";
+endpoint.device.protection_extension="3.6.4900.2";
+endpoint.os.version="Darwin";
+endpoint.os.servicepack="21.2.0";
+endpoint.os.architecture="x86_64";
+endpoint.device.hostname="$(hostname)";
+endpoint.device.MAC["FFFF.FFFF.FFFF"]="true";
 EOF
 }
 
@@ -106,7 +138,8 @@ endpoint.device.tcp6port["445"]="true";
 EOF
 }
 
-function real_generic_data() {
+function real_generic() {
+	# use this with a fake_anyconnect function
 	cat <<EOF
 endpoint.os.version="$(uname -s)";
 endpoint.os.servicepack="$(uname -r)";
@@ -183,8 +216,8 @@ EOF
 get_token
 
 (
-	real_generic_data
-	fake_anyconnect
+	real_generic
+	fake_anyconnect_macos_intel
 	fake_firewall
 	fake_clamav
 ) | tee /dev/stderr | send_response
