@@ -1,2 +1,5 @@
 .DS_Store
 docs/temp.html
+dap*.xml
+data.xml
+vpn-connect.log

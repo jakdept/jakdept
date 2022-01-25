@@ -68,13 +68,7 @@
 	"terminal.integrated.defaultLocation": "editor",
 	"terminal.integrated.fontFamily": "\"Hack Nerd Font Mono\", Hack, Menlo, Monaco, Consolas, \"Droid Sans Mono\", \"Courier New\", monospace, \"Droid Sans Fallback\"", // terminal font
 	"terminal.integrated.tabs.enabled": true,
-	"terminal.explorerKind": "external", // launch native terminal
-	//
-	//
-	//
-	//
-	// git settings
-	"git.autofetch": true,
+	"terminal.explorerKind": "external",
 	"git.enableSmartCommit": true, // commit all changes if nothing is staged
 	"git.enableCommitSigning": false, // only works if you have a GPG key set up
 	"git.autoStash": true, // stash changes before checking out another branch
@@ -268,7 +262,6 @@
 	],
 	"github.copilot.inlineSuggest.count": 5,
 	"json.maxItemsComputed": 500000,
-	"editor.guides.bracketPairs": true,
 	"workbench.editor.tabCloseButton": "off",
 	"git.showUnpublishedCommitsButton": "never",
 	"extensions.ignoreRecommendations": true,
