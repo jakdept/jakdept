@@ -15,6 +15,15 @@ nancy)
 feen)
 	url='https://www.twitch.tv/thedragonfeeney'
 	;;
+train)
+	url='https://www.youtube.com/watch?v=-imG6CNF9kI'
+	;;
+cat)
+	url='https://www.youtube.com/watch?v=c4yLOd_-X58'
+	;;
+puppy)
+	url='https://www.youtube.com/watch?v=XLwYWCzlfIw'
+	;;
 esac
 
 
