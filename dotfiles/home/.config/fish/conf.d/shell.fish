@@ -10,6 +10,8 @@ export EDITOR="vim"
 
 #alias openssl="docker run -t --rm rnix/openssl-gost /usr/bin/openssl"
 
+alias lpenter=enter
+
 # Defined in /usr/local/Cellar/fish/3.2.2_1/share/fish/functions/fish_greeting.fish @ line 1
 function fish_greeting
     if not set -q fish_greeting
