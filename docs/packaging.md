@@ -150,7 +150,7 @@ This is what I want so very badly.
 The problem I've had in the past was it added an extra dependency on itself.
 I need to go back and try this one again.
 
-## FPM (Effing package management)
+## FPM (Effing Package Management)
 
 <https://github.com/jordansissel/fpm>
 
