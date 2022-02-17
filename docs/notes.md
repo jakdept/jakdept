@@ -11,6 +11,18 @@ This list is ordered starting with greatest impact.
 - Automate. Build the system, not the products of the system.
 - Measure the results with testing, metrics, instrumentation, etc.
 
+## System Standards
+
+Every system should have:
+
+- binaries
+- an environment or container the binary runs in
+- configs for the binaries
+- data used by the system
+- logs produced by the binaries
+- monitoring
+- backups of the data, and the config/binaries/env if not asserted and recreated
+
 ## Standard Testing Concepts
 
 I find the following test flags usually useful and often write them into my code.
@@ -62,5 +74,5 @@ Let's be honest, I mostly pull my slack statuses from these files.
 - Law of urgency reversal: An urgent issue that requires any small amount of work from the user, will suddenly reverse the urgency of the issue.
 - Law of email relativity: An email to a manager is like a space ship attempting a sling shot round a planet. It heads to the planet, disappears for an undefined amount of time and then returns with three times the urgency that it left you.
 - FFS Law: If it can go wrong, it will go wrong. At 4.55pm on a Friday.
-- Law of Invisible Transference: Leaving a test machine in the hands of a Developer will transition it into a production machine that’s not backed up and crashes 10 minutes before they think to tell you that ‘its been a production machine for 3 weeks, why wasn’t it backed up?’
-- Rejected Solution Law : If a meeting includes non-technical people, there is a 50% chance someone says "Can we try Solution A ?" after 5 mins of silence where solution A is not technically feasable. That probability raise to 75% if they are management, and to 95%
+- Law of Invisible Transference: Any test machine with Developer access eventually becomes production. Usually after it's crashed, with no backups, with no documentation.
+- Rejected Solution Law : In any meeting there is a 50% chance someone suggests a solution just after it's been judged technically infeasable for >5m. This risk jumps to 80% if management is present.
