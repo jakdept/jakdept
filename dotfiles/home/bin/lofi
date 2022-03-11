@@ -27,4 +27,4 @@ puppy)
 esac
 
 
-mpv --autofit=1024 "${url}"
+mpv --autofit=2048 "${url}"
