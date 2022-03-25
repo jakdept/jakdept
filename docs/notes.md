@@ -17,6 +17,7 @@ Every system should have:
 
 - binaries
 - an environment or container the binary runs in
+- networking
 - configs for the binaries
 - data used by the system
 - logs produced by the binaries
@@ -48,6 +49,8 @@ Let's be honest, I mostly pull my slack statuses from these files.
 - And what do we say to the God of Death? Not Today.
 - Red Leader, this is Gold Leader. We're starting our attack run.
 - Kubernetes is called K8s because you'll need to be training for it kindergarten thru 8th grades
+- Pitter patter let's get at er
+- Howdy Howdy let's get rowdy
 
 ## BOFH Quotes
 

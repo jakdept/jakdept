@@ -1,0 +1,13 @@
+#!/bin/bash
+
+while read playlist path; do
+
+echo "will grab $playlist and put it at $path"
+
+	if [ -z "$path" ]; then
+		mkdir -p "${path}"
+	fi
+
+	caffeinate -i youtube-dl --ignore-errors --continue --extract-audio --playlist-start 1 --audio-format m4a --output "$path/%(title)s.%(ext)s" "${playlist}"
+
+done

@@ -8,6 +8,11 @@ msg=(
   '💻 teaching sand to think was a mistake'
   '🐤 mess wit teh honk u git teh bonk'
   '💻 The Jira will continue until morale improves.'
+  '🚜 pitter patter lets get at er'
+  '🤠 howdy howdy lets get rowdy'
+  '🍋 easy peasey lemon squeasee'
+  '💂 bish bash bosh'
+  '💥 full send'
 )
 
 git commit --allow-empty -m "${msg[$RANDOM % 3]}" && git push
