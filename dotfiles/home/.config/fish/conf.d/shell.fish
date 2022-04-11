@@ -11,13 +11,6 @@ export EDITOR="vim"
 #alias openssl="docker run -t --rm rnix/openssl-gost /usr/bin/openssl"
 
 alias lpenter=enter
-function ssl-check
-	for domain in $argv
-		echo |
-		openssl s_client -connect $domain:443 -servername $domain -showcerts 2>/dev/null |
-		openssl x509 -noout -subject -issuer -enddate -modulus
-	end
-end
 
 # Defined in /usr/local/Cellar/fish/3.2.2_1/share/fish/functions/fish_greeting.fish @ line 1
 function fish_greeting
