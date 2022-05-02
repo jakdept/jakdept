@@ -1,7 +1,6 @@
 #!/bin/bash
 
 msg=(
-  '✈️  Red Leader, this is Gold Leader. We''re starting our attack run.'
   '✈️  lets try spinning thats a cool trick'
   '⏳ i don''t like sand. it''s coarse, rough and irritating, and it gets everywhere'
   '😎 "iT''s eASieR sAiD ThAn DOne" buddy that''s why i say things and don''t do them'
@@ -15,4 +14,4 @@ msg=(
   '💥 full send'
 )
 
-git commit --allow-empty -m "${msg[$RANDOM % 3]}" && git push
+git commit --allow-empty -m "${msg[$RANDOM % ${#msg[@]}]}" && git push
