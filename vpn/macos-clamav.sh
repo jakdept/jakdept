@@ -58,13 +58,12 @@ function check_xmlstarlet() {
 
 function fake_clamav() {
 	cat <<EOF
-endpoint.process["clamav-freshclam"].path="/usr/bin/freshclam";
-endpoint.process["clamav-freshclam"].exists="true";
-endpoint.process["clamav-freshclam"].name="freshclam";
-endpoint.process["clamav"].name="clamd";
-endpoint.process["clamav"].path="/usr/sbin/clamd";
-endpoint.process["clamav"].exists="true";
-endpoint.process.clamav.exists="true";
+endpoint.process["freshclam-abs"].path="/usr/bin/freshclam";
+endpoint.process["freshclam-abs"].exists="true";
+endpoint.process["freshclam-abs"].name="freshclam";
+endpoint.process["clamav-abs"].name="clamd";
+endpoint.process["clamav-abs"].path="/usr/sbin/clamd";
+endpoint.process["clamav-abs"].exists="true";
 EOF
 }
 
@@ -216,8 +215,14 @@ EOF
 get_token
 
 (
-	real_generic
-	fake_anyconnect_macos_intel
-	fake_firewall
-	fake_clamav
+	cat <<EOF
+endpoint.application.clienttype="AnyConnect";
+endpoint.process["freshclam-rel"].exists="true";
+endpoint.process["clamav-rel"].exists="true";
+endpoint.anyconnect.platform="mac-intel";
+EOF
+	# real_generic
+	# fake_anyconnect_macos_intel
+	# fake_firewall
+	# fake_clamav
 ) | tee /dev/stderr | send_response
