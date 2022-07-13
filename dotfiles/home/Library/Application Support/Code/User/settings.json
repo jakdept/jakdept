@@ -4,7 +4,6 @@
 	//
 	// editor window settings
 	"window.restoreWindows": "none",
-	"window.nativeTabs": true,
 	"window.menuBarVisibility": "toggle", // hide menu bar - linux only
 	"keyboard.touchbar.enabled": false, // disable macos touchbar
 	"workbench.sideBar.location": "right",
@@ -19,14 +18,8 @@
 	"explorer.confirmDragAndDrop": false, // do not prompt on drag and drop
 	"workbench.panel.defaultLocation": "right", // put cli panel on the right
 	"search.quickOpen.includeHistory": false, // do not show recently opened files
-	"explorer.autoReveal": false, // do not move explorer to the active file
-	//
-	//
-	// full screen mode settings
-	"zenMode.hideActivityBar": false,
+	"explorer.autoReveal": false,
 	"zenMode.hideLineNumbers": false,
-	"zenMode.hideStatusBar": false,
-	"zenMode.hideTabs": false,
 	//
 	//
 	// editor code window settings
@@ -39,8 +32,6 @@
 	"editor.scrollbar.verticalScrollbarSize": 4,
 	"editor.scrollbar.horizontalScrollbarSize": 4,
 	"editor.insertSpaces": false,
-	"editor.renderIndentGuides": false,
-	"editor.highlightActiveIndentGuide": false,
 	"editor.minimap.enabled": false, // minimap on right - nice but not very useful
 	"editor.fontLigatures": true, // ligatures
 	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
@@ -135,6 +126,7 @@
 	// markdown settings
 	"[markdown]": {
 		"editor.wordWrap": "off",
+		"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
 	},
 	"markdownlint.ignore": [
 		"MD004/ul-style - Unordered list style"
@@ -151,39 +143,14 @@
 	"go.lintOnSave": "package",
 	"go.vetOnSave": "package",
 	"go.coverOnSave": true,
-	"go.toolsEnvVars": {
-		"CGO_ENABLED": 1, // enable cgo because macos
-	},
+	// "go.toolsEnvVars": {
+	// 	"CGO_ENABLED": 1, // enable cgo because macos
+	// },
 	// Specifies Lint tool name.
-	// "go.lintTool": "golangci-lint",
+	"go.lintTool": "golangci-lint",
 	// https://github.com/alecthomas/gometalinter#supported-linters
 	"go.lintFlags": [
 		"--enable=deadcode",
-		"--enable=errcheck",
-		"--enable=gosimple",
-		"--enable=govet",
-		"--enable=golint",
-		"--enable=ineffassign",
-		"--enable=staticcheck",
-		"--enable=structcheck",
-		"--enable=typecheck",
-		"--enable=unused",
-		"--enable=varcheck",
-		"--enable=interfacer",
-		"--enable=gosec",
-		"--enable=bodyclose",
-		"--enable=dupl",
-		"--enable=errorlint",
-		"--enable=goconst",
-		"--enable=goimports",
-		"--enable=misspell",
-		"--enable=unparam",
-		"--enable=gocritic",
-		"--enable=noctx",
-		"--enable=paralleltest",
-		"--enable=unconvert",
-		"--enable=sqlclosecheck",
-		"--enable=gomnd",
 	],
 	//
 	// python language settings
@@ -344,5 +311,18 @@
 	"gitlens.liveshare.allowGuestAccess": false,
 	"gitlens.terminalLinks.enabled": false,
 	"gitlens.mode.statusBar.enabled": false,
-	"gitlens.advanced.quickPick.closeOnFocusOut": false
+	"gitlens.advanced.quickPick.closeOnFocusOut": false,
+	"editor.guides.indentation": false,
+	"editor.guides.highlightActiveIndentation": false,
+	"editor.bracketPairColorization.enabled": false,
+	"window.nativeTabs": true,
+	"zenMode.fullScreen": false,
+	"window.titleBarStyle": "native",
+	"markdown.preview.scrollEditorWithPreview": false,
+	"puppet.editorService.enable": false,
+	"git.showActionButton": {
+		"commit": false,
+		"publish": false,
+		"sync": false
+	}
 }
