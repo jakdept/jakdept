@@ -5,8 +5,7 @@
 	// editor window settings
 	"window.restoreWindows": "none",
 	"window.menuBarVisibility": "toggle", // hide menu bar - linux only
-	"keyboard.touchbar.enabled": false, // disable macos touchbar
-	"workbench.sideBar.location": "right",
+	"keyboard.touchbar.enabled": false,
 	"workbench.colorTheme": "WarpOS", // theme
 	"workbench.preferredDarkColorTheme": "WarpOS", // theme for os dark mode
 	"workbench.editor.untitled.labelFormat": "name", // name of tab
@@ -75,7 +74,8 @@
 	"files.associations": {
 		"*.yaml": "yaml",
 		"*.plist": "xml",
-		"*.spec": "RPMSpec"
+		"*.spec": "RPMSpec",
+		"changelog": "plaintext"
 	},
 	"[html]": {
 		"editor.defaultFormatter": "HookyQR.beautify"
@@ -317,12 +317,18 @@
 	"editor.bracketPairColorization.enabled": false,
 	"window.nativeTabs": true,
 	"zenMode.fullScreen": false,
-	"window.titleBarStyle": "native",
 	"markdown.preview.scrollEditorWithPreview": false,
 	"puppet.editorService.enable": false,
 	"git.showActionButton": {
 		"commit": false,
 		"publish": false,
 		"sync": false
-	}
+	},
+	"yaml.maxItemsComputed": 10000,
+	"yaml.schemas": {
+		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+	},
+	"window.titleBarStyle": "native",
+	"githubPullRequests.pullBranch": "never",
+	"editor.stickyScroll.enabled": true
 }
