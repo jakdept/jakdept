@@ -260,11 +260,25 @@ cockroach init --host=localhost:26257
 Alternatively, start an ssh tunnel and run the following:
 
 ```bash
-ssh -L localhost:26257:cockroach.hostbaitor.com:26257 cockroach1.hostbaitor.com &
+ssh -f -N -L localhost:26257:localhost:26257 cockroach1.hostbaitor.com
+ssh -f -N -L localhost:8080:localhost:8080 cockroach1.hostbaitor.com
 cockroach init --certs-dir=cockroach --host=localhost:26257
 ```
 
 Or you can open the port in the firewall - but we're going to set up `haproxy` for that port instead.
+
+### Create an Admin User
+
+```sql
+CREATE USER admin WITH PASSWORD 'hunter2' VALID UNTIL '2022-10-31';
+```
+
+This will let you log into the webinterface on 8080 with that user. If you need to reset that password, or drop that user:
+
+```sql
+MODIFY USER webadmin WITH PASSWORD 'hunter2' VALID UNTIL'2022-10-31';
+DROP USER webadmin;
+```
 
 ### More Info
 
