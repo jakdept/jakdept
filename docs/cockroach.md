@@ -280,9 +280,23 @@ MODIFY USER webadmin WITH PASSWORD 'hunter2' VALID UNTIL'2022-10-31';
 DROP USER webadmin;
 ```
 
-### More Info
+### Test workload
 
 <https://www.cockroachlabs.com/docs/stable/deploy-cockroachdb-on-premises.html#step-5-test-the-cluster>
+
+### Backup options
+
+<https://www.cockroachlabs.com/docs/stable/take-full-and-incremental-backups.html#take-a-full-backup> full backup
+
+I'm per tempted to script out per-table backups, but not 100% sold if that's what we want to do?
+We can just restore one table from a full backup?
+
+But if you want basically you just specify the table:
+
+<https://www.cockroachlabs.com/docs/v22.1/backup.html#backup-a-table-or-view>
+
+TBC I'm thinking these would go to ceph?
+Then I'm thinking we probably also just push them to a server somewhere?
 
 ### Perl examples
 
