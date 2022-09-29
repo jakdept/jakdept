@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for domain in "$@"; do
+	echo |
+		openssl s_client -connect "${domain}:443" -servername "${domain}" -showcerts 2>/dev/null |
+		openssl x509 -noout -modulus |
+		md5sum
+done
