@@ -1,0 +1,14 @@
+#!/bin/bash
+
+for origDomain in "$@"; do
+	port=443
+	domain="${origDomain}"
+	if [[ "${origDomain}" != $(awk -F: '{print $1}' <<<"${origDomain}") ]]; then
+		domain=$(awk -F: '{print $1}' <<<"${origDomain}")
+		port=$(awk -F: '{print $2}' <<<"${origDomain}")
+	fi
+
+	echo |
+		openssl s_client -connect "${domain}:${port}" -servername "${domain}" -showcerts 2>/dev/null |
+		openssl x509 -noout -text
+done
