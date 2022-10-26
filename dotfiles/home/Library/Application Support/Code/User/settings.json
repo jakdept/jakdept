@@ -330,5 +330,8 @@
 	},
 	"window.titleBarStyle": "native",
 	"githubPullRequests.pullBranch": "never",
-	"editor.stickyScroll.enabled": true
+	"editor.stickyScroll.enabled": true,
+	"[sql]": {
+		"editor.defaultFormatter": "cweijan.vscode-mysql-client2"
+	}
 }
