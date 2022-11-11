@@ -16,7 +16,7 @@ shift
 TICKET=
 STUB=0
 TOKEN=
-PINNEDPUBKEY="${CSD_SHA256:+"-k --pinnedpubkey sha256//$CSD_SHA256"}"
+PINNEDPUBKEY="${CSD_SHA256:+"--no-check-certificate --pinnedpubkey sha256//$CSD_SHA256"}"
 
 while [ "$1" ]; do
 	if [ "$1" == "-ticket" ]; then
@@ -33,9 +33,11 @@ done
 function get_token() {
 	URL="https://$CSD_HOSTNAME/+CSCOE+/sdesktop/token.xml?ticket=$TICKET&stub=$STUB"
 	if [ -n "$XMLSTARLET" ]; then
-		TOKEN=$(curl $PINNEDPUBKEY -s "$URL" | xmlstarlet sel -t -v /hostscan/token)
+		# TOKEN=$(curl $PINNEDPUBKEY -s "$URL" | xmlstarlet sel -t -v /hostscan/token)
+		TOKEN=$(wget -O- $PINNEDPUBKEY --quiet "$URL" | xmlstarlet sel -t -v /hostscan/token)
 	else
-		TOKEN=$(curl $PINNEDPUBKEY -s "$URL" | sed -n '/<token>/s^.*<token>\(.*\)</token>^\1^p')
+		# TOKEN=$(curl $PINNEDPUBKEY -s "$URL" | sed -n '/<token>/s^.*<token>\(.*\)</token>^\1^p')
+		TOKEN=$(wget -O- $PINNEDPUBKEY --quiet "$URL" | sed -n '/<token>/s^.*<token>\(.*\)</token>^\1^p')
 	fi
 }
 
@@ -43,7 +45,8 @@ function send_response() {
 	COOKIE_HEADER="Cookie: sdesktop=$TOKEN"
 	CONTENT_HEADER="Content-Type: text/xml"
 	URL="https://$CSD_HOSTNAME/+CSCOE+/sdesktop/scan.xml?reusebrowser=1"
-	curl ${PINNEDPUBKEY} -s -H "$CONTENT_HEADER" -H "$COOKIE_HEADER" -H 'Expect: ' --data-binary @- "$URL"
+	# curl ${PINNEDPUBKEY} -s -H "$CONTENT_HEADER" -H "$COOKIE_HEADER" -H 'Expect: ' --data-binary @- "$URL"
+	wget ${PINNEDPUBKEY} --quiet --header "$CONTENT_HEADER" --header "$COOKIE_HEADER" --header 'Expect: ' --post-data "$(cat /dev/stdin)" "$URL"
 }
 
 function check_xmlstarlet() {
@@ -165,7 +168,8 @@ function run_hostscan() {
 
 	URL="https://${CSD_HOSTNAME}/CACHE/sdesktop/data.xml"
 
-	curl $PINNEDPUBKEY -s "$URL" | xmlstarlet sel -t -v '/data/hostscan/field/@value' | while read -r ENTRY; do
+	# curl $PINNEDPUBKEY -s "$URL" | xmlstarlet sel -t -v '/data/hostscan/field/@value' | while read -r ENTRY; do
+	wget -O- $PINNEDPUBKEY --quiet "$URL" | xmlstarlet sel -t -v '/data/hostscan/field/@value' | while read -r ENTRY; do
 		# XX: How are ' and , characters escaped in this?
 		TYPE="$(sed "s/^'\(.*\)','\(.*\)','\(.*\)'$/\1/" <<<"$ENTRY")"
 		NAME="$(sed "s/^'\(.*\)','\(.*\)','\(.*\)'$/\2/" <<<"$ENTRY")"
