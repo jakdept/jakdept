@@ -314,7 +314,6 @@
 	"gitlens.advanced.quickPick.closeOnFocusOut": false,
 	"editor.guides.indentation": false,
 	"editor.guides.highlightActiveIndentation": false,
-	"editor.bracketPairColorization.enabled": false,
 	"window.nativeTabs": true,
 	"zenMode.fullScreen": false,
 	"markdown.preview.scrollEditorWithPreview": false,

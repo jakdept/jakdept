@@ -172,13 +172,13 @@ cockroach cert create-node \
   --ca-key=cockroach/ca.key \
   localhost 127.0.0.1 \
   $NODE_HOSTNAME $(dig +short $NODE_HOSTNAME)
+
+ssh $NODE_HOSTNAME mkdir -p /var/lib/cockroach/certs
+ssh $NODE_HOSTNAME useradd -d /var/lib/cockroach cockroach
+scp cockroach/cockroach.service $NODE_HOSTNAME:/etc/systemd/system/
 scp cockroach/{ca.crt,node.crt,node.key} $NODE_HOSTNAME:/var/lib/cockroach/certs/
 ssh $NODE_HOSTNAME chown -R cockroach. /var/lib/cockroach
 rm cockroach/node.{crt,key}
-
-scp cockroach/cockroach.service $NODE_HOSTNAME:/etc/systemd/system/
-ssh $NODE_HOSTNAME mkdir -p /var/lib/cockroach/certs
-ssh $NODE_HOSTNAME useradd -d /var/lib/cockroach cockroach
 ```
 
 Then see the details on each host:
@@ -266,6 +266,12 @@ cockroach init --certs-dir=cockroach --host=localhost:26257
 ```
 
 Or you can open the port in the firewall - but we're going to set up `haproxy` for that port instead.
+
+### See the Cluster
+
+```bash
+cockroach node status
+```
 
 ### Create an Admin User
 
