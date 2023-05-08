@@ -325,12 +325,21 @@
 	},
 	"yaml.maxItemsComputed": 10000,
 	"yaml.schemas": {
-		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
 	},
 	"window.titleBarStyle": "native",
 	"githubPullRequests.pullBranch": "never",
 	"editor.stickyScroll.enabled": true,
 	"[sql]": {
 		"editor.defaultFormatter": "cweijan.vscode-mysql-client2"
+	},
+	"workbench.sideBar.location": "right",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"terminal.integrated.minimumContrastRatio": 1,
+	"puppet.pdk.checkVersion": false,
+	"puppet.titleBar.pdkNewModule.enable": false,
+	"puppet.validate.resolvePuppetfiles": false,
+	"[python]": {
+		"editor.formatOnType": true
 	}
 }
