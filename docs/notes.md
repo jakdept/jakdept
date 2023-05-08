@@ -19,6 +19,7 @@ Every system should have:
 - an environment or container the binary runs in
 - networking
 - configs for the binaries
+- encryption keys
 - data used by the system
 - logs produced by the binaries
 - monitoring
