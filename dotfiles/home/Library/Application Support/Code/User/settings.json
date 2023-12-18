@@ -22,8 +22,7 @@
 	//
 	//
 	// editor code window settings
-	"editor.tabSize": 2, // each tab is 2 spaces
-	"diffEditor.renderSideBySide": false, // show me whitespace changes as well
+	"editor.tabSize": 2, // show me whitespace changes as well
 	"editor.cursorStyle": "line",
 	"editor.renderWhitespace": "boundary", // show whitespace not surrounded by text
 	"editor.fontFamily": "Hack Nerd Font Mono, Hack, Menlo, Monaco, 'Courier New', monospace", // editor font
@@ -325,7 +324,7 @@
 	},
 	"yaml.maxItemsComputed": 10000,
 	"yaml.schemas": {
-		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+		"file:///Users/jack/.vscode/extensions/atlassian.atlascode-3.0.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
 	},
 	"window.titleBarStyle": "native",
 	"githubPullRequests.pullBranch": "never",
@@ -341,5 +340,9 @@
 	"puppet.validate.resolvePuppetfiles": false,
 	"[python]": {
 		"editor.formatOnType": true
-	}
+	},
+	"puppet.editorService.hover.showMetadataInfo": false,
+	"puppet.format.enable": false,
+	"scm.diffDecorationsGutterWidth": 4,
+	"diffEditor.renderSideBySide": false
 }

@@ -11,4 +11,9 @@ for origDomain in "$@"; do
 	echo |
 		openssl s_client -connect "${domain}:${port}" -servername "${domain}" -showcerts 2>/dev/null |
 		openssl x509 -noout -subject -issuer -enddate -ext subjectAltName
+
+
+	echo chain below:
+	echo |
+		openssl s_client -connect "${domain}:${port}" -servername "${domain}" 1>/dev/null
 done

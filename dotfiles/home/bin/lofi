@@ -4,7 +4,7 @@ url='https://www.youtube.com/watch?v=5qap5aO4i9A'
 
 case "$1" in
 girl)
-	url='https://www.youtube.com/watch?v=5qap5aO4i9A'
+	url='https://www.youtube.com/watch?v=ULQhvIGG27Q'
 	;;
 racoon)
 	url='https://www.youtube.com/watch?v=7NOSDKb0HlU'
