@@ -8,6 +8,6 @@ echo "will grab $playlist and put it at $path"
 		mkdir -p "${path}"
 	fi
 
-	caffeinate -i -s youtube-dl --ignore-errors --continue --extract-audio --playlist-start 1 --audio-format m4a --output "$path/%(title)s.%(ext)s" -- "${playlist}"
+	caffeinate -i -s yt-dlp --ignore-errors --continue --extract-audio --playlist-start 1 --format mp4 --output "$path/%(title)s.%(ext)s" -- "${playlist}"
 
 done
