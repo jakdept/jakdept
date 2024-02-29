@@ -9,13 +9,18 @@
 	defaultBranch = main
 [push]
 	default = current
+	autosetupremote = true
 [pull]
 	default = current
-	rebase = false
+	rebase = true
+[rebase]
+	autostash = true
+[commit]
+	verbose = true
 [alias]
 	count = !git shortlog -sn
 [color]
-	diff = auto
+	diff = zdiff3
 	status = auto
 	branch = auto
 	ui = true

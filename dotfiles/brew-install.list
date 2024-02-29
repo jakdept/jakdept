@@ -13,6 +13,7 @@ cmatrix
 cmocka
 cockroachdb/tap/cockroach
 colima
+coreutils
 csvkit
 direnv
 docker
@@ -83,6 +84,7 @@ s3cmd
 shellcheck
 shfmt
 smartmontools
+lynx
 telegraf
 telnet
 terraform
