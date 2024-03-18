@@ -1,6 +1,9 @@
-set GPG_TTY (who | grep (id -un) | awk '{print "/dev/" $2}')
-set SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
-gpgconf --launch gpg-agent
+function yk-load
+	set -gx GPG_TTY (tty)
+	set -gx SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
+	gpgconf --launch gpg-agent
+	gpg-connect-agent updatestartuptty /bye
+end
 
 function yk-reset
 	/usr/bin/env gpg --card-status 2>/dev/null |

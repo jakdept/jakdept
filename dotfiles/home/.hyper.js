@@ -120,7 +120,7 @@ module.exports = {
         webGLRenderer: true,
         // keypress required for weblink activation: [ctrl|alt|meta|shift]
         // todo: does not pick up config changes automatically, need to restart terminal :/
-        webLinksActivationKey: '',
+        webLinksActivationKey: 'meta',
         // if `false` (without backticks and without quotes), Hyper will use ligatures provided by some fonts
         disableLigatures: true,
         // set to true to disable auto updates
@@ -137,6 +137,7 @@ module.exports = {
 		blurredColors: ['#332222', '#223322', '#222233'],
 		// blurredColors: 'css',
 	}
+
     },
     // a list of plugins to fetch and install from npm
     // format: [@org/]project[#version]
@@ -144,7 +145,8 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: ["hyper-named-css-colors", "hyperminimal", "hyperborder"],
+    // plugins: ["hyper-named-css-colors", "hyperminimal", "hyperborder"],
+    plugins: ["hyper-one-dark", "hyperminimal", "hyperborder"],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed

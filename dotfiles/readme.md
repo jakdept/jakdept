@@ -98,6 +98,14 @@ cat dotfiles/vscode-install.list | xargs -L1 code --install-extension
 cat dotfiles/vscode-install.list | xargs -L1 code --install-extension
 ```
 
+### Add Gems
+
+Actually just install `eyaml` but whatever.
+
+```bash
+sudo gem install hiera-eyaml
+```
+
 ### Add macOS App Store Packages
 
 Sign into the app store, then:
