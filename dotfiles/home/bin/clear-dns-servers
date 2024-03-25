@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# list devices
+# networksetup -listallnetworkservices
+# list custom dns things on the Wi-Fi device
+# networksetup -getdnsservers Wi-Fi
+# clear custom DNS servers for a connection
+# networksetup -setdnsservers <service> "empty"
+
+# automatically clear all custom dns servers
+# networksetup -listallnetworkservices
+
+networksetup -listallnetworkservices|tail -n+2|
+	xargs -I {} sudo networksetup -setdnsservers {} "empty"
