@@ -193,6 +193,12 @@ ls ~/src/github.com/jakdept/jakdept/dotfiles/home/bin | xargs -I{} ln ~/src/gith
 
 ### macOS modifications
 
+Install Rosetta
+
+```bash
+/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+```
+
 ```bash
 defaults write -g ApplePressAndHoldEnabled -bool false # key repeat
 
