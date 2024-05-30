@@ -50,7 +50,7 @@ module.exports = {
         // default: `false` (without backticks and without quotes) on Windows and Linux, ignored on macOS
         showWindowControls: '',
         // custom padding (CSS format, i.e.: `top right bottom left`)
-        padding: '8px 8px',
+        padding: '12px 12px',
         // the full list. if you're going to provide the full color palette,
         // including the 6 x 6 color cubes and the grayscale map, just provide
         // an array here instead of a color map object
@@ -132,7 +132,7 @@ module.exports = {
         // for advanced config flags please refer to https://hyper.is/#cfg
 	hyperBorder: {
 		// hyperborder
-		borderWidth: '8px',
+		borderWidth: '12px',
 		borderColors:  ['#11046a', '#6a1104', '#046a11'],
 		blurredColors: ['#332222', '#223322', '#222233'],
 		// blurredColors: 'css',

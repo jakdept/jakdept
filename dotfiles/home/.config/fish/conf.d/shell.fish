@@ -4,6 +4,7 @@ fish_add_path /usr/local/sbin
 fish_add_path /usr/local/opt/openssl@3/bin
 fish_add_path /opt/homebrew/bin
 fish_add_path /opt/homebrew/sbin
+fish_add_path /opt/homebrew/opt/ansible@8/bin
 
 # contains $fish_user_paths ~/bin; or set -Ua fish_user_paths ~/bin
 # contains $fish_user_paths /usr/local/sbin; or set -Ua fish_user_paths /usr/local/sbin

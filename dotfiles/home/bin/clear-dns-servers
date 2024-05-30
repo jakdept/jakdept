@@ -10,5 +10,7 @@
 # automatically clear all custom dns servers
 # networksetup -listallnetworkservices
 
-networksetup -listallnetworkservices|tail -n+2|
+networksetup -listallnetworkservices|
+	tail -n+2|
+	grep -v '^\*'|
 	xargs -I {} sudo networksetup -setdnsservers {} "empty"
