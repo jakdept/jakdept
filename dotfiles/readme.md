@@ -25,6 +25,18 @@ To clone:
 git clone https://github.com/jakdept/jakdept.git ~/src/github.com/jakdept/jakdept
 ```
 
+Enable TouchID sudo by copying this file:
+
+```bash
+/etc/pam.d/sudo_local.template
+```
+
+And uncommenting the line:
+
+```pam
+auth       sufficient     pam_tid.so
+```
+
 Install initial configs:
 
 ```bash

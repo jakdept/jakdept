@@ -50,7 +50,7 @@ module.exports = {
         // default: `false` (without backticks and without quotes) on Windows and Linux, ignored on macOS
         showWindowControls: '',
         // custom padding (CSS format, i.e.: `top right bottom left`)
-        padding: '12px 12px',
+        padding: '8px 8px 8px 8px',
         // the full list. if you're going to provide the full color palette,
         // including the 6 x 6 color cubes and the grayscale map, just provide
         // an array here instead of a color map object
@@ -133,9 +133,15 @@ module.exports = {
 	hyperBorder: {
 		// hyperborder
 		borderWidth: '12px',
-		borderColors:  ['#11046a', '#6a1104', '#046a11'],
-		blurredColors: ['#332222', '#223322', '#222233'],
+		borderColors:  ['#11046a', '#6a1104'],
+		blurredColors: ['#222222', '#111111'],
 		// blurredColors: 'css',
+		animate: {
+			duration: '3',
+		},
+	},
+	summon: {
+		hotkey: 'Alt+t',
 	}
 
     },
@@ -146,7 +152,7 @@ module.exports = {
     //   `@company/project`
     //   `project#1.0.1`
     // plugins: ["hyper-named-css-colors", "hyperminimal", "hyperborder"],
-    plugins: ["hyper-one-dark", "hyperminimal", "hyperborder"],
+    plugins: ["hyper-one-dark", "hyperminimal", "hyperborder", "hyperterm-summon"],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed

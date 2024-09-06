@@ -33,9 +33,9 @@ done
 function get_token() {
 	URL="https://$CSD_HOSTNAME/+CSCOE+/sdesktop/token.xml?ticket=$TICKET&stub=$STUB"
 	if [ -n "$XMLSTARLET" ]; then
-		TOKEN=$(curl $PINNEDPUBKEY -s "$URL" | xmlstarlet sel -t -v /hostscan/token)
+		TOKEN=$(curl $PINNEDPUBKEY -sSL "$URL" | xmlstarlet sel -t -v /hostscan/token)
 	else
-		TOKEN=$(curl $PINNEDPUBKEY -s "$URL" | sed -n '/<token>/s^.*<token>\(.*\)</token>^\1^p')
+		TOKEN=$(curl $PINNEDPUBKEY -sSL "$URL" | sed -n '/<token>/s^.*<token>\(.*\)</token>^\1^p')
 	fi
 }
 
