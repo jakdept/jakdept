@@ -1,7 +1,12 @@
-theme="Apple Classic"
+#theme="Apple Classic"
+theme="Wombat"
 mouse-hide-while-typing=true
 background-opacity=".9"
 background-blur-radius=20
 macos-titlebar-style="hidden"
 window-height=31
 window-width=111
+scrollback-limit=100000
+window-inherit-working-directory=false
+working-directory="/Users/jack/Downloads/"
+bold-is-bright=true
