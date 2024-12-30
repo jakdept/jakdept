@@ -9,4 +9,4 @@ window-width=111
 scrollback-limit=100000
 window-inherit-working-directory=false
 working-directory="/Users/jack/Downloads/"
-bold-is-bright=true
+bold-is-bright=false
