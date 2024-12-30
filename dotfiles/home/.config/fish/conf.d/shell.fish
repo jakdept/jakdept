@@ -34,3 +34,7 @@ function fish_greeting
     and echo $fish_greeting
     and timeout 8s neofetch --disable term_font
 end
+
+function netbox-key
+        cat ~/.config/netbox-key.rsa | pbcopy
+end
