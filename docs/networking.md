@@ -1,6 +1,6 @@
 # Networking Concepts
 
-THis is an attempt to explain some common networking concepts from a server level.
+This is an attempt to explain some common networking concepts from a server level.
 
 ## OSI 7 Layer Networks
 
