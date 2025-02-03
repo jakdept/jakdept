@@ -1,5 +1,4 @@
 1dot75cm.rpmspec
-atlassian.atlascode
 bbenoist.vagrant
 bmalehorn.vscode-fish
 coolbear.systemd-unit-file
@@ -12,7 +11,6 @@ dawhite.mustache
 dbaeumer.vscode-eslint
 dineug.vuerd-vscode
 dlech.chmod
-eamodio.gitlens
 editorconfig.editorconfig
 fabianlauer.vs-code-xml-format
 foxundermoon.shell-format
@@ -30,8 +28,8 @@ jetmartin.bats
 jq-syntax-highlighting.jq-syntax-highlighting
 korekontrol.saltstack
 luggage66.awk
+maattdd.gitless
 marchiore.csvtomarkdown
-mhutchie.git-graph
 miguel-savignano.ruby-symbols
 mikestead.dotenv
 ms-azuretools.vscode-docker
@@ -45,7 +43,9 @@ ms-vscode.cpptools
 ms-vscode.hexeditor
 ms-vscode.remote-explorer
 ms-vsliveshare.vsliveshare
+mtxr.sqltools
 patbenatar.advanced-new-file
+phil294.git-log--graph
 puppet.puppet-vscode
 quicktype.quicktype
 rangav.vscode-thunder-client
@@ -53,14 +53,16 @@ redhat.vscode-yaml
 salesforce.salesforcedx-vscode-apex
 salesforce.salesforcedx-vscode-core
 samuelcolvin.jinjahtml
+shopify.ruby-lsp
 spadin.zmk-tools
 tamasfe.even-better-toml
 timonwong.shellcheck
+tristan957.postgres-config
+tristan957.postgres-hacker
 twxs.cmake
 vscodevim.vim
 waderyan.gitblame
 warpnet.salt-lint
-wingrunr21.vscode-ruby
 zapu.vscode-aspell
 zobo.php-intellisense
 zxh404.vscode-proto3
