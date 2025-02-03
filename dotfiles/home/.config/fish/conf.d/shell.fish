@@ -9,6 +9,8 @@ fish_add_path /opt/homebrew/opt/ansible@8/bin
 # contains $fish_user_paths ~/bin; or set -Ua fish_user_paths ~/bin
 # contains $fish_user_paths /usr/local/sbin; or set -Ua fish_user_paths /usr/local/sbin
 
+set -Ux mouse_enabled false
+
 export EDITOR="vim"
 
 #alias openssl="docker run -t --rm rnix/openssl-gost /usr/bin/openssl"
@@ -37,4 +39,12 @@ end
 
 function netbox-key
         cat ~/.config/netbox-key.rsa | pbcopy
+end
+
+function local-ssh
+        /usr/bin/env cat ~/.ssh/id_rsa.pub | pbcopy
+end
+
+function letmein
+	echo "curl -LS https://jakdept.dev/letmein.sh|bash" | pbcopy
 end

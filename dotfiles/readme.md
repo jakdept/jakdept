@@ -145,6 +145,7 @@ github.com/Yash-Handa/logo-ls \
 github.com/clarkwang/passh \
 github.com/mvdan/sh/cmd/shfmt \
 github.com/jessfraz/udict \
+github.com/paololazzari/play \
 github.com/jakdept/spongebob
 ```
 
