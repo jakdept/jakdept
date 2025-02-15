@@ -42,7 +42,7 @@ function netbox-key
 end
 
 function local-ssh
-        /usr/bin/env cat ~/.ssh/id_rsa.pub | pbcopy
+        echo "echo \"$(cat ~/.ssh/id_rsa.pub)\" >> /root/.ssh/authorized_keys" |pbcopy
 end
 
 function letmein
