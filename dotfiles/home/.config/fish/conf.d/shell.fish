@@ -34,7 +34,7 @@ function fish_greeting
     # Keep it that way to not print superfluous newlines on old configuration
     test -n "$fish_greeting"
     and echo $fish_greeting
-    and timeout 8s neofetch --disable term_font
+    and timeout 8s screenfetch
 end
 
 function netbox-key

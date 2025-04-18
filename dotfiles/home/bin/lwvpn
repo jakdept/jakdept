@@ -1,4 +1,4 @@
 #!/bin/bash
 
 date
-caffeinate -d -s sudo openconnect https://emp.vpngw.liquidweb.com --csd-wrapper=/Users/jack/src/github.com/jakdept/jakdept/vpn/macos-clamav.sh
+caffeinate -d -s sudo openconnect --authgroup=IDM-Group --user=jhayhurst https://emp.vpngw.liquidweb.com --csd-wrapper=/Users/jack/src/github.com/jakdept/jakdept/vpn/macos-clamav.sh
