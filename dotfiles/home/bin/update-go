@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sudo rm -rf /usr/local/go
+
+curl -ksSL https://golang.org/dl 2>/dev/null |
+	grep 'class="download" href="' |
+	sed -e 's/^.*href="/https:\/\/golang.org/g' |
+	sed -e 's/">.*$//g' |
+	grep "$(uname -s | tr '[:upper:]' '[:lower:]')" |
+	grep "$(uname -m | sed 's/^x86_64$/amd64/')" |
+	head -n1 |
+	xargs curl -ksSL -o- |
+	tar -C /usr/local -zx
