@@ -2,6 +2,9 @@
 
 sudo rm -rf /usr/local/go
 
+sudo mkdir /usr/local/go
+sudo chown -n $(id -u):$(id -g) /usr/local/go
+
 curl -ksSL https://golang.org/dl 2>/dev/null |
 	grep 'class="download" href="' |
 	sed -e 's/^.*href="/https:\/\/golang.org/g' |

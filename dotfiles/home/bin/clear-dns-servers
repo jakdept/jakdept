@@ -14,3 +14,8 @@ networksetup -listallnetworkservices|
 	tail -n+2|
 	grep -v '^\*'|
 	xargs -I {} sudo networksetup -setdnsservers {} "empty"
+
+networksetup -listallnetworkservices|
+	tail -n+2|
+	grep -v '^\*'|
+	xargs -I {} sudo networksetup -setsearchdomains {} "Empty"

@@ -143,6 +143,10 @@ module.exports = {
 	},
 	summon: {
 		hotkey: 'Alt+t',
+	},
+	hyperWindowSize: {
+		width: 1020,
+		height: 645
 	}
 
     },
@@ -153,7 +157,7 @@ module.exports = {
     //   `@company/project`
     //   `project#1.0.1`
     // plugins: ["hyper-named-css-colors", "hyperminimal", "hyperborder"],
-    plugins: ["hyper-one-dark", "hyperminimal", "hyperborder", "hyperterm-summon"],
+    plugins: ["hyper-one-dark", "hyperminimal", "hyperborder", "hyperterm-summon", "hyper-window-size"],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed

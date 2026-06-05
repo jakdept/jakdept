@@ -42,7 +42,7 @@ function yk-keys
 end
 
 function yk-ssh
-	/usr/bin/env ssh-add -L | pbcopy
+	/usr/bin/env ssh-add -L
 end
 
 function yk-gpg
