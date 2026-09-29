@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dot Grid Pocket Journal</title>
+<!--
+  Pocket journal imposition, US Letter.
+
+  Print: 100% scale / "Actual size", margins "None", duplex, flip on LONG edge.
+  1. Cut the sheet in half at the printed cut marks (5.5" from the top).
+  2. Trim 0.75" off the left and right of each half, leaving 7" x 5.5".
+  3. Stack the halves (top half outside) and fold along the center dot column.
+  Finished pages: 3.5" x 5.5".
+
+  Each .sheet is one side of the paper. Each .half is one 7" spread (two
+  journal pages); data-pages lists its booklet pages, left then right (1-8).
+-->
+<style>
+  @page {
+    size: letter portrait;
+    margin: 0;
+  }
+
+  :root {
+    --dot-color: #8c8c8c;
+    --mark-color: #8c8c8c;
+    --margin: 5mm;
+    --sheet-w: 8.5in;
+    --sheet-h: 11in;
+    /* dot field: 33 x 26 dots on 5mm centers, middle column on the fold,
+       minus the 4 outside-corner dots (see #corners) */
+    --field-w: 161mm;
+    --field-h: 126mm;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+  .sheet {
+    position: relative;
+    width: var(--sheet-w);
+    height: var(--sheet-h);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+    background: #fff;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .sheet:last-of-type {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  .half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .half svg {
+    display: block;
+    width: var(--field-w);
+    height: var(--field-h);
+  }
+
+  .dot {
+    fill: var(--dot-color);
+  }
+
+  /* Cut marks sit in the 0.75" side waste, so they are trimmed away. */
+  .cut-mark {
+    position: absolute;
+    top: calc(50% - 0.125mm);
+    width: 11mm;
+    border-top: 0.25mm solid var(--mark-color);
+  }
+
+  .cut-mark.left {
+    left: var(--margin);
+  }
+
+  .cut-mark.right {
+    right: var(--margin);
+  }
+
+  .defs {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .label {
+    display: none;
+  }
+
+  /* On screen only: gray desk, sheet shadows, and a dashed cut guide. */
+  @media screen {
+    body {
+      background: #d9d9d9;
+      padding: 16px 0;
+    }
+
+    .label {
+      display: block;
+      width: var(--sheet-w);
+      margin: 0 auto 6px;
+      font: 13px/1.4 system-ui, sans-serif;
+      color: #444;
+    }
+
+    .sheet {
+      margin: 0 auto 32px;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    .sheet::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      border-top: 1px dashed #e0707a;
+      pointer-events: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Shared dot pattern. Units are mm (each field's viewBox is in mm). -->
+<svg class="defs" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="dots" patternUnits="userSpaceOnUse" x="-2" y="-2" width="5" height="5">
+      <circle class="dot" cx="2.5" cy="2.5" r="0.3"/>
+    </pattern>
+    <!-- Drops the corner dot at each page's outside corners, for a corner rounder. -->
+    <mask id="corners">
+      <rect width="161" height="126" fill="#fff"/>
+      <circle cx="0.5" cy="0.5" r="1"/>
+      <circle cx="160.5" cy="0.5" r="1"/>
+      <circle cx="0.5" cy="125.5" r="1"/>
+      <circle cx="160.5" cy="125.5" r="1"/>
+    </mask>
+  </defs>
+</svg>
+
+<p class="label">Front &mdash; red dashes: cut (screen only)</p>
+<section class="sheet front">
+  <div class="half" data-pages="8 1"><svg viewBox="0 0 161 126" aria-hidden="true"><rect width="161" height="126" fill="url(#dots)" mask="url(#corners)"/></svg></div>
+  <div class="half" data-pages="6 3"><svg viewBox="0 0 161 126" aria-hidden="true"><rect width="161" height="126" fill="url(#dots)" mask="url(#corners)"/></svg></div>
+  <div class="cut-mark left"></div>
+  <div class="cut-mark right"></div>
+</section>
+
+<p class="label">Back</p>
+<section class="sheet back">
+  <div class="half" data-pages="2 7"><svg viewBox="0 0 161 126" aria-hidden="true"><rect width="161" height="126" fill="url(#dots)" mask="url(#corners)"/></svg></div>
+  <div class="half" data-pages="4 5"><svg viewBox="0 0 161 126" aria-hidden="true"><rect width="161" height="126" fill="url(#dots)" mask="url(#corners)"/></svg></div>
+</section>
+
+</body>
+</html>
